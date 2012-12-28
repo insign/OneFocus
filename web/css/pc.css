@@ -1,0 +1,20 @@
+/*
+    Document   : pc
+    Created on : 28/12/2012, 16:34:33
+    Author     : Hélio <insign@gmail.com>
+    Description:
+*/
+
+body {
+  background: graytext;
+}
+.iframe {
+  width: 360px;
+  height: 640px;
+  margin: 0 auto;
+}
+
+.iframe iframe {
+  width: 100%;
+  height: 100%;
+}

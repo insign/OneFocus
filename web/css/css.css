@@ -1,0 +1,21 @@
+/*
+    Document   : css
+    Created on : 28/12/2012, 16:24:29
+    Author     : Hélio <insign@gmail.com>
+    Description:
+*/
+
+
+* {
+  text-align: center;
+  color: #fff;
+}
+html {
+  background:url(../img/Aurora_by_Edward_LOVER4ever.jpg) center top no-repeat #642A6B;
+}
+
+body {
+  width: 100%;
+  height: 100%;;
+}
+
