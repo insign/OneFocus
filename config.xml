@@ -13,7 +13,7 @@
   <author href="http://sensy.me" email="contact@sensy.me">
     Sensy Software
   </author>
-  <preference name="fullscreen" value="true" />
+  <preference name="fullscreen" value="false" />
 
   <preference name="android-installLocation" value="auto" />
 
@@ -23,5 +23,6 @@
   <icon src="img/icon/android/mdpi.png"   gap:platform="android"    gap:density="mdpi" />
   <icon src="img/icon/android/hdpi.png"   gap:platform="android"    gap:density="hdpi" />
   <icon src="img/icon/android/xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
+  <icon src="img/icon/android/xxhdpi.png"  gap:platform="android"    gap:density="xxhdpi" />
 
 </widget>

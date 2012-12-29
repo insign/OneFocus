@@ -24,7 +24,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 // Cordova is ready
 //
 function onDeviceReady() {
-  playAudio("http://sensy.me/cdn/onefocus/deadmau5_strobe_192bit.mp3");
+  playAudio("strobe_cut.mp3");
 }
 
 // Audio player
