@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+		  xmlns:gap = "http://phonegap.com/ns/1.0"
+		  id        = "me.sensy.onefocus"
+		  versionCode="1"
+		  version   = "1.0.0">
+
+  <name>One Focus</name>
+
+  <author href="http://sensy.me" email="contact@sensy.me">
+    Sensy Software
+  </author>
+  <preference name="fullscreen" value="true" />
+
+  <preference name="android-installLocation" value="auto" />
+
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</widget>
