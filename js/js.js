@@ -24,7 +24,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 // Cordova is ready
 //
 function onDeviceReady() {
-  playAudio("audio/strobe.mp3");
+  playAudio("http://sensy.me/cdn/onefocus/deadmau5_strobe_192bit.mp3");
 }
 
 // Audio player
@@ -35,9 +35,10 @@ var mediaTimer = null;
 // Play audio
 //
 function playAudio(src) {
-  // Create Media object from src
-  my_media = new Media(src, onSuccess, onError);
-
+  if (my_media == null) {
+    // Create Media object from src
+    my_media = new Media(src, onSuccess, onError);
+  } // else play current audio
   // Play audio
   my_media.play();
 
