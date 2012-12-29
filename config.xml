@@ -16,4 +16,6 @@
 
   <feature name="http://api.phonegap.com/1.0/media" />
 
+  <icon src="img/colored_ball.png" />
+
 </widget>
