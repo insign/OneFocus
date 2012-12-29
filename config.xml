@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
-		  xmlns:gap = "http://phonegap.com/ns/1.0"
-		  id        = "me.sensy.onefocus"
-		  versionCode="1"
-		  version   = "1.0.0">
+	   xmlns:gap = "http://phonegap.com/ns/1.0"
+	   id        = "me.sensy.onefocus"
+	   versionCode="1"
+	   version   = "1.0.0">
 
   <name>One Focus</name>
+  <description>
+    Help users focus in only one work once
+  </description>
 
   <author href="http://sensy.me" email="contact@sensy.me">
     Sensy Software
@@ -16,6 +19,9 @@
 
   <feature name="http://api.phonegap.com/1.0/media" />
 
-  <icon src="img/colored_ball.png" />
+  <icon src="img/high.png" />
+  <icon src="img/icon/android/mdpi.png"   gap:platform="android"    gap:density="mdpi" />
+  <icon src="img/icon/android/hdpi.png"   gap:platform="android"    gap:density="hdpi" />
+  <icon src="img/icon/android/xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
 
 </widget>
