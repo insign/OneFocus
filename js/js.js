@@ -11,8 +11,8 @@ jQuery(document).ready(function($) {
   $("#player").jPlayer({
     ready: function(e) {
 	 $(this).jPlayer("setMedia", {
-	   mp3: "audio/ghosts_n_stuff.mp3",
-	   oga: "audio/spirit_of_life.ogg"
+	   mp3: "audio/strobe.mp3",
+	   oga: "audio/strobe.ogg"
 	 });
     },
     swfPath: "js/jplayer",
