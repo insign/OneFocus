@@ -1,10 +1,11 @@
 $(function() {
 
-  function slide_to_unlock_reach() {
+  function slide_to_unlock_reach_limit() {
     return $('.slider').offset().left + $('.well').width() - ($('.slider').offset().left - $('.well').offset().left + 60);
   }
 
   inicial_os = $('.slider').offset();
+  happy_end = false;
 
 // Modified from http://reader-download.googlecode.com/svn/trunk/jquery-draggable/index.html
   $.fn.drags = function(opt) {
@@ -17,7 +18,6 @@ $(function() {
 	 var $el = this.find(opt.handle);
     }
 
-    happy = false;
     var $well = $('.well');
 
 
@@ -45,14 +45,8 @@ $(function() {
 			 .on("mouseup", function(e) {
 		$(this).removeClass('draggable').css('z-index', z_idx);
 	   });
-//	   console.info($el.offset().left);
-	   if ($el.offset().left > slide_to_unlock_reach()) { // Swipe finished! (mouse still holded)
-		if (!happy) {
-		  $well.fadeOut();
-		  $el.trigger('mouseup');
-		  happy = true;
-		  console.info('Happy!');
-		}
+	   if ($el.offset().left > slide_to_unlock_reach_limit()) { // Swipe finished! (mouse still holded)
+		swipe_reached(1)
 	   }
 	 });
 	 e.preventDefault(); // disable selection
@@ -62,68 +56,84 @@ $(function() {
 	 } else {
 	   $(this).removeClass('active-handle').parent().removeClass('draggable');
 	 }
-	 if ($el.offset().left < slide_to_unlock_reach()) { // No reach
+	 if ($el.offset().left < slide_to_unlock_reach_limit()) { // No reach
 	   $el.animate({left: 0})
 	 } else { // Reach the end of swipe (mouse up)
-	   $el.animate({left: 0}).delay(2000, function() {
-		happy = false;
-		stored_well = $(".well").clone();
-		$(".well").remove();
-		$("#page-wrap").prepend(stored_well);
-		$(".slider").drags();
-		$(".well").fadeIn();
-	   })
+	   swipe_reached(2);
 	 }
     });
 
+    // The following credit: http://www.evanblack.com/blog/touch-slide-to-unlock/
+
+    $('.slider')[0].addEventListener('touchmove', function(event) {
+	 event.preventDefault();
+	 var el = event.target;
+	 var touch = event.touches[0];
+	 curX = touch.pageX - this.offsetLeft - 73;
+	 if (curX <= 0)
+	   return;
+	 if (curX > slide_to_unlock_reach_limit() - 100) {
+	   swipe_reached(1);
+	 }
+	 el.style.webkitTransform = 'translateX(' + curX + 'px)';
+    }, false);
+
+    $('.slider')[0].addEventListener('touchend', function(event) {
+	 this.style.webkitTransition = '-webkit-transform 0.3s ease-in';
+	 this.addEventListener('webkitTransitionEnd', function(event) {
+	   this.style.webkitTransition = 'none';
+	 }, false);
+	 this.style.webkitTransform = 'translateX(0px)';
+    }, false);
+
+
+  }
+
+  /**
+   * Comment
+   */
+  function swipe_reached(step) {
+    if (step == 1) {
+	 if (!happy_end) {
+	   $('.well').fadeOut();
+	   $('.slider').trigger('mouseup').trigger('touchend');
+	   happy_end = true;
+	   console.info('Happy!');
+	 }
+    } else if (step == 2) {
+	 $('.slider').animate({left: 0}).delay(2000, function() {
+	   happy_end = false;
+	   stored_well = $(".well").clone();
+	   $(".well").remove();
+	   $("#page-wrap").prepend(stored_well);
+	   $(".slider").drags();
+	   $(".well").fadeIn();
+	 })
+    }
   }
 
   $(".slider").drags();
 
 
-//  $(".slider").draggable({
+  //  $(".slider").draggable({
 //    axis: 'x',
-//    containment: 'parent',
-//    drag: function(event, ui) {
+  //    containment: 'parent',
+  //    drag: function(event, ui) {
 //	 if (ui.position.left > 550) {
-//	   $(".well").fadeOut();
-//	 } else {
-//	   // Apparently Safari isn't allowing partial opacity on text with background clip? Not sure.
-//	   // $("h2 span").css("opacity", 100 - (ui.position.left / 5))
+  //    $(".well").fadeOut();
+  //	 } else {
+  //	   // Apparently Safari isn't allowing partial opacity on text with background clip? Not sure.
+  //	   // $("h2 span").css("opacity", 100 - (ui.position.left / 5))
 //	 }
 //    },
-//    stop: function(event, ui) {
-//	 if (ui.position.left < 551) {
+  //    stop: function(event, ui) {
+  //	 if (ui.position.left < 551) {
 //	   $(this).animate({
-//		left: 0
+//	 left: 0
 //	   })
-//	 }
+  //	 }
 //    }
 //  });
 
-  // The following credit: http://www.evanblack.com/blog/touch-slide-to-unlock/
-
-  $('.slider')[0].addEventListener('touchmove', function(event) {
-    event.preventDefault();
-    var el = event.target;
-    var touch = event.touches[0];
-    curX = touch.pageX - this.offsetLeft - 73;
-    if (curX <= 0)
-	 return;
-    if (curX > slide_to_unlock_reach() - 100) {
-	 $('.well').fadeOut();
-	 $('.well').fadeIn();
-
-    }
-    el.style.webkitTransform = 'translateX(' + curX + 'px)';
-  }, false);
-
-  $('.slider')[0].addEventListener('touchend', function(event) {
-    this.style.webkitTransition = '-webkit-transform 0.3s ease-in';
-    this.addEventListener('webkitTransitionEnd', function(event) {
-	 this.style.webkitTransition = 'none';
-    }, false);
-    this.style.webkitTransform = 'translateX(0px)';
-  }, false);
 
 });
