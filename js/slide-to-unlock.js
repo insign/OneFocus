@@ -107,7 +107,7 @@ $(function() {
     curX = touch.pageX - this.offsetLeft - 73;
     if (curX <= 0)
 	 return;
-    if (curX > 550) {
+    if (curX > slide_to_unlock_reach) {
 	 $('.well').fadeOut();
     }
     el.style.webkitTransform = 'translateX(' + curX + 'px)';
