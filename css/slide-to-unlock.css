@@ -69,7 +69,7 @@ h2 {
 
   -webkit-text-size-adjust: none;
 }
-.slider {
+/*.slider {
   display: inline-block;
   line-height: 1;
   z-index: 1000;
@@ -92,18 +92,18 @@ h2 {
 }
 
 .slider i:before {
-  /*color: grey;*/
+  color: grey;
 
   font-size: .8em;
 
   padding: .3em;
-  /*
+
     -webkit-text-fill-color: currentcolor;
     -moz-text-fill-color: currentcolor;
     -o-text-fill-color: currentcolor;
     -ms-text-fill-color: currentcolor;
-    text-fill-color: currentcolor;*/
-}
+    text-fill-color: currentcolor;
+}*/
 
 
 
