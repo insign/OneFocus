@@ -3,16 +3,13 @@
   <head>
     <title>Media Example</title>
     <link type="text/css" rel="stylesheet" href="css/cssreset-min.css">
-    <link type="text/css" rel="stylesheet" href="css/fonts/fontello/css/icons.css">
     <link type="text/css" rel="stylesheet" href="css/css.css">
 
     <script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>
     <script src="js/js.js"></script>
   </head>
   <body>
-    <div class="btn_play_cont">
-	 <a href="#" class="btn play" onclick="playAudio('http://wiredin.loopinfinito.com.br/music/01/wiredin_01_6_daybreak.ogg');"><i class="icon-play" title="Play"></i></a>
-    </div>
+    <a href="#" class="btn large" onclick="playAudio('strobe_cut.mp3');">Play Audio</a>
     <a href="#" class="btn large" onclick="pauseAudio();">Pause Playing Audio</a>
     <a href="#" class="btn large" onclick="stopAudio();">Stop Playing Audio</a>
     <p id="audio_position"></p>
