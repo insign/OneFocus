@@ -19,7 +19,7 @@ body {
   height: 100%;;
 }
 
-.btn_play_cont a {
+.btn_play_cont .btn.play {
   margin:3em 0;
 
   display: inline-block;
@@ -29,11 +29,11 @@ body {
   background: #B8B8B8;
 
   /* RGBa with 0.6 opacity */
-  background: rgba(184,184,184, 0.6);
+  background: rgba(184,184,184, 0.4);
   /* For IE 5.5 - 7*/
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#6eB8B8B8, endColorstr=#6eB8B8B8);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#49B8B8B8, endColorstr=#49B8B8B8);
   /* For IE 8*/
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#6eB8B8B8, endColorstr=#6eB8B8B8)";
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#49B8B8B8, endColorstr=#49B8B8B8)";
 
   /*Calculo para IE
   Replace 0.6 with your desired alpha level
@@ -54,5 +54,9 @@ body {
   font-size: 9em;
   color: #fff;
   opacity: 1;
+}
+
+.btn:active {
+  background: #B8B8B8 !important;
 }
 
