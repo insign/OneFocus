@@ -26,6 +26,38 @@
       "orig_css": "play",
       "orig_code": 59392,
       "src": "fontawesome"
+    },
+    {
+      "search": [
+        "right",
+        "player"
+      ],
+      "code": 59234,
+      "from": 59234,
+      "uid": "7ea35a8fc7e676c78e99cab2d4bc8653",
+      "css": "next",
+      "orig_css": "to-end-alt",
+      "orig_code": 59234,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "load",
+        "progress",
+        "wait"
+      ],
+      "code": 59444,
+      "meta": {
+        "email": "berbentseva_angela@yahoo.com",
+        "author": "Angela Berbentseva, specially for fontello"
+      },
+      "uid": "9bd60140934a1eb9236fd7a8ab1ff6ba",
+      "css-ext": "animate-spin",
+      "css": "wait",
+      "orig_css": "spin4",
+      "orig_code": 59444,
+      "src": "fontelico",
+      "from": 59444
     }
   ]
 }

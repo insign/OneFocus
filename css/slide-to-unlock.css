@@ -1,0 +1,108 @@
+/*
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+
+	 (Very modified)
+*/
+
+.well {
+  width:20%;
+  margin: 0 auto;
+  margin-top: 4em;
+
+  padding: .5em;
+
+  background: rgb(10,10,10);
+  background: -moz-linear-gradient(top,  rgba(10,10,10,1) 0%, rgba(38,38,38,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(10,10,10,1)), color-stop(100%,rgba(38,38,38,1)));
+  background: -webkit-linear-gradient(top,  rgba(10,10,10,1) 0%,rgba(38,38,38,1) 100%);
+  background: -o-linear-gradient(top,  rgba(10,10,10,1) 0%,rgba(38,38,38,1) 100%);
+  background: -ms-linear-gradient(top,  rgba(10,10,10,1) 0%,rgba(38,38,38,1) 100%);
+  background: linear-gradient(to bottom,  rgba(10,10,10,1) 0%,rgba(38,38,38,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', endColorstr='#262626',GradientType=0 );
+
+
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -o-border-radius: 1em;
+  -ms-border-radius: 1em;
+  border-radius: 1em;
+
+
+  border: 2px solid #454545;
+  overflow: hidden;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h2 {
+  background: -moz-linear-gradient(left, #4d4d4d, 0.4, #4d4d4d, 0.5, white, 0.6, #4d4d4d, #4d4d4d);
+  background: -webkit-gradient(linear,left top,right top,color-stop(0, #4d4d4d),color-stop(0.4, #4d4d4d),color-stop(0.5, white),color-stop(0.6, #4d4d4d),color-stop(1, #4d4d4d));
+
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-animation: slidetounlock 5s infinite;
+
+  font-size: 2em;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+
+  padding: 0;
+
+  -webkit-text-size-adjust: none;
+}
+.slider {
+  display: inline-block;
+  line-height: 1;
+  z-index: 1000;
+
+  background: #ffffff;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f1f1f1), color-stop(51%,#e1e1e1), color-stop(100%,#f6f6f6));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
+
+
+  -webkit-border-radius: .2em;
+  -moz-border-radius: .2em;
+  -o-border-radius: .2em;
+  -ms-border-radius: .2em;
+  border-radius: .2em;
+}
+
+.slider i:before {
+  color: grey;
+
+  font-size: .8em;
+
+  padding: .3em;
+
+  -webkit-text-fill-color: currentcolor;
+  -moz-text-fill-color: currentcolor;
+  -o-text-fill-color: currentcolor;
+  -ms-text-fill-color: currentcolor;
+  text-fill-color: currentcolor;
+}
+
+
+
+@-webkit-keyframes slidetounlock {
+  0% {
+  background-position: -720px 0;
+}
+100%{
+  background-position: 720px 0;
+}
+}

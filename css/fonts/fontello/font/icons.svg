@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20100429 at Sun Dec 30 00:50:10 2012
+Created by FontForge 20100429 at Sun Dec 30 18:28:35 2012
  By root
 Copyright (C) 2012 by original authors @ fontello.com
 </metadata>
@@ -16,10 +16,10 @@ Copyright (C) 2012 by original authors @ fontello.com
     panose-1="2 0 6 3 0 0 0 0 0 0"
     ascent="850"
     descent="-150"
-    bbox="16 -45 806 745.5"
+    bbox="14.2012 -150.331 1015.8 850.331"
     underline-thickness="50"
     underline-position="-100"
-    unicode-range="U+E800-E801"
+    unicode-range="U+E762-E834"
   />
 <missing-glyph 
 d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
@@ -29,10 +29,16 @@ d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
  />
     <glyph glyph-name="nonmarkingreturn" horiz-adv-x="333" 
  />
+    <glyph glyph-name="uniE762" unicode="&#xe762;" horiz-adv-x="979" 
+d="M45.5 -45q-13.5 0 -21.5 9t-8 23v726q0 20 18 30q19 7 32 -8l336 -362q9 -10 9 -23t-9 -23l-336 -362q-7 -10 -20.5 -10zM440 -45q-14 0 -21.5 9t-7.5 23v726q0 20 18 30q19 7 32 -8l336 -362q9 -10 9 -23t-9 -23l-336 -362q-8 -10 -21 -10zM806 -6q0 -16 11.5 -27.5
+t27.5 -11.5h78q17 0 28.5 11t11.5 28v711q0 17 -11.5 28.5t-28.5 11.5h-78q-17 0 -28 -11.5t-11 -28.5v-711z" />
     <glyph glyph-name="uniE800" unicode="&#xe800;" horiz-adv-x="725" 
 d="M16 -9v717q0 20 18 32q20 11 35 0l623 -359q18 -13 18 -31q0 -19 -18 -32l-623 -358q-8 -5 -17 -5q-16 0 -26 10.5t-10 25.5z" />
     <glyph glyph-name="uniE801" unicode="&#xe801;" horiz-adv-x="821" 
 d="M52 -45q-15 0 -25.5 10.5t-10.5 25.5v718q0 15 10.5 25.5t25.5 10.5h251q15 0 25.5 -10.5t10.5 -25.5v-718q0 -15 -10.5 -25.5t-25.5 -10.5h-251zM482 -9v718q0 15 10.5 25.5t25.5 10.5h252q14 0 25 -10.5t11 -25.5v-718q0 -15 -11 -25.5t-25 -10.5h-252
 q-15 0 -25.5 10.5t-10.5 25.5z" />
+    <glyph glyph-name="uniE834" unicode="&#xe834;" horiz-adv-x="1030" 
+d="M193 734q97 81 219.5 106t243.5 -10.5t212 -126.5q108 -108 137.5 -257t-25.5 -282q-8 -29 -41.5 -38t-56.5 14q-26 26 -12 68q57 121 33.5 258.5t-122.5 236.5q-79 79 -184 110.5t-211.5 10.5t-192.5 -90zM837 -34q-97 -81 -219.5 -106t-243.5 10.5t-212 126.5
+q-108 108 -137.5 257t25.5 282q8 29 41.5 38t56.5 -14q26 -26 12 -68q-57 -121 -33.5 -258.5t122.5 -236.5q79 -79 184 -110.5t211.5 -10.5t192.5 90z" />
   </font>
 </defs></svg>

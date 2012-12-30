@@ -6,10 +6,12 @@
     <link type="text/css" rel="stylesheet" href="css/cssreset-min.css">
     <link type="text/css" rel="stylesheet" href="css/fonts/fontello/css/icons.css">
     <link type="text/css" rel="stylesheet" href="css/css.css">
+    <link type="text/css" rel="stylesheet" href="css/slide-to-unlock.css">
 
     <script src="cordova-2.2.0.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/api/media.js"></script>
+    <script src="js/slide-to-unlock.js"></script>
     <script src="js/js.js"></script>
   </head>
   <body>
@@ -20,5 +22,15 @@
     <a href="#" class="btn large" onclick="stopAudio();">Stop</a>
     <p id="audio_position"></p>
     <a href="#" onclick="playAudio('http://upload.wikimedia.org/wikipedia/commons/e/e0/Brahms_-_Piano_quartet_Gmin_-_4._Presto%2C_Rondo_alla_Zingarese.ogg');"><i class="icon-play" title="Play"></i> Alternate</a>
+
+    <div id="page-wrap">
+
+	 <div class="well">
+
+	   <h2><strong class="slider"><i class="icon-next"></i></strong> <span>slide to next</span></h2>
+
+	 </div>
+
+    </div>
   </body>
 </html>
