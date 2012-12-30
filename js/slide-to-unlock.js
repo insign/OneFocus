@@ -1,6 +1,8 @@
 $(function() {
 
-  slide_to_unlock_reach = 260;
+  function slide_to_unlock_reach() {
+    return $('.slider').offset().left + $('.well').width() - ($('.slider').offset().left - $('.well').offset().left + 60);
+  }
 
 // Modified from http://reader-download.googlecode.com/svn/trunk/jquery-draggable/index.html
   $.fn.drags = function(opt) {
@@ -43,7 +45,7 @@ $(function() {
 		$(this).removeClass('draggable').css('z-index', z_idx);
 	   });
 //	   console.info($el.offset().left);
-	   if ($el.offset().left > slide_to_unlock_reach) { // Swipe finished! (mouse still holded)
+	   if ($el.offset().left > slide_to_unlock_reach()) { // Swipe finished! (mouse still holded)
 		if (!happy) {
 		  $well.fadeOut();
 		  $el.trigger('mouseup');
@@ -59,7 +61,7 @@ $(function() {
 	 } else {
 	   $(this).removeClass('active-handle').parent().removeClass('draggable');
 	 }
-	 if ($el.offset().left < slide_to_unlock_reach) { // No reach
+	 if ($el.offset().left < slide_to_unlock_reach()) { // No reach
 	   $el.animate({left: 0})
 	 } else { // Reach the end of swipe (mouse up)
 	   $el.animate({left: 0}).delay(1000, function() {
@@ -107,7 +109,7 @@ $(function() {
     curX = touch.pageX - this.offsetLeft - 73;
     if (curX <= 0)
 	 return;
-    if (curX > slide_to_unlock_reach) {
+    if (curX > slide_to_unlock_reach()) {
 	 $('.well').fadeOut();
     }
     el.style.webkitTransform = 'translateX(' + curX + 'px)';

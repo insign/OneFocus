@@ -30,7 +30,7 @@ git push -v
 # Open URL after all
 Invoke-Expression "cmd.exe /C start $url_after"
 
-clear
+#clear
 Write-Host "  .______       _______     ___       _______  ____    ____  __   "
 Write-Host "  |   _  \     |   ____|   /   \     |       \ \   \  /   / |  |  "
 Write-Host "  |  |_)  |    |  |__     /  ^  \    |  .--.  | \   \/   /  |  |  "
