@@ -1,7 +1,7 @@
 $(function() {
 
   function slide_to_unlock_reach() {
-    return $('.slider').offset().left + $('.well').width() - ($('.slider').offset().left - $('.well').offset().left + 60);
+    return $('.slider').offset().left + $('.well').width() - ($('.slider').offset().left - $('.well').offset().left + 160);
   }
 
 // Modified from http://reader-download.googlecode.com/svn/trunk/jquery-draggable/index.html
