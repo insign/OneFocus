@@ -49,8 +49,9 @@ h2 {
 
   -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
+  color: transparent;
 
-  -webkit-animation: slidetounlock 5s infinite;
+  -webkit-animation: slidetounlock 10s infinite;
 
   font-size: 2em;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
