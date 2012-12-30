@@ -20,6 +20,8 @@ body {
 }
 
 .btn_play_cont .btn.play {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
   margin:3em 0;
 
   display: inline-block;
