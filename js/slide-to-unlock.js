@@ -128,6 +128,7 @@ $(function() {
   }, false);
 
   $('.slider')[0].addEventListener('touchend', function(event) {
+    swipe_reached(2);
     this.style.webkitTransition = '-webkit-transform 0.3s ease-in';
     this.addEventListener('webkitTransitionEnd', function(event) {
 	 this.style.webkitTransition = 'none';
