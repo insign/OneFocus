@@ -59,6 +59,8 @@ h2 span {
   line-height: 1;
   z-index: 1000;
 
+  padding: 1em .5em;
+
   background: #ffffff;
   background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f1f1f1), color-stop(51%,#e1e1e1), color-stop(100%,#f6f6f6));
