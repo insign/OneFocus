@@ -20,9 +20,11 @@ body {
 }
 
 .btn_play_cont a {
+  margin:3em 0;
+
   display: inline-block;
-  width: 7em;
-  height: 7em;
+  width: 11em;
+  height: 11em;
 
   background: #B8B8B8;
 
@@ -46,10 +48,10 @@ body {
 }
 .btn_play_cont i:before {
   position: relative;
-  left:.1em;
-  top:.2em;
+  left:.01em;
+  top:.12em;
 
-  font-size: 5em;
+  font-size: 9em;
   color: #fff;
   opacity: 1;
 }
