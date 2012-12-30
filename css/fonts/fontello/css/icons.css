@@ -17,15 +17,15 @@
   margin-right: 0.2em;
   text-align: center;
   opacity: 0.8;
-/* fix buttons height, for twitter bootstrap */
+  /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
-/* Animation center compensation - magrins should be symmetric */
-/* remove if not needed */
+  /* Animation center compensation - magrins should be symmetric */
+  /* remove if not needed */
   margin-left: 0.2em;
-/* you can be more comfortable with increased icons size */
-/* font-size: 120%; */
-/* Uncomment for 3D effect */
-/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  /* you can be more comfortable with increased icons size */
+  font-size: 120%; 
+  /* Uncomment for 3D effect */
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
 }
 
 .icon-pause:before { content: '\e801'; } /* '' */
