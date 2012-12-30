@@ -63,30 +63,6 @@ $(function() {
 	 }
     });
 
-    // The following credit: http://www.evanblack.com/blog/touch-slide-to-unlock/
-
-    $('.slider')[0].addEventListener('touchmove', function(event) {
-	 event.preventDefault();
-	 var el = event.target;
-	 var touch = event.touches[0];
-	 curX = touch.pageX - this.offsetLeft - 73;
-	 if (curX <= 0)
-	   return;
-	 if (curX > slide_to_unlock_reach_limit() - 100) {
-	   swipe_reached(1);
-	 }
-	 el.style.webkitTransform = 'translateX(' + curX + 'px)';
-    }, false);
-
-    $('.slider')[0].addEventListener('touchend', function(event) {
-	 this.style.webkitTransition = '-webkit-transform 0.3s ease-in';
-	 this.addEventListener('webkitTransitionEnd', function(event) {
-	   this.style.webkitTransition = 'none';
-	 }, false);
-	 this.style.webkitTransform = 'translateX(0px)';
-    }, false);
-
-
   }
 
   /**
@@ -134,6 +110,30 @@ $(function() {
   //	 }
 //    }
 //  });
+
+
+  // The following credit: http://www.evanblack.com/blog/touch-slide-to-unlock/
+
+  $('.slider')[0].addEventListener('touchmove', function(event) {
+    event.preventDefault();
+    var el = event.target;
+    var touch = event.touches[0];
+    curX = touch.pageX - this.offsetLeft - 73;
+    if (curX <= 0)
+	 return;
+    if (curX > slide_to_unlock_reach_limit() - 100) {
+	 swipe_reached(1);
+    }
+    el.style.webkitTransform = 'translateX(' + curX + 'px)';
+  }, false);
+
+  $('.slider')[0].addEventListener('touchend', function(event) {
+    this.style.webkitTransition = '-webkit-transform 0.3s ease-in';
+    this.addEventListener('webkitTransitionEnd', function(event) {
+	 this.style.webkitTransition = 'none';
+    }, false);
+    this.style.webkitTransform = 'translateX(0px)';
+  }, false);
 
 
 });
