@@ -1,0 +1,31 @@
+{
+  "name": "icons",
+  "glyphs": [
+    {
+      "search": [
+        "pause",
+        "player"
+      ],
+      "code": 59393,
+      "from": 9097,
+      "uid": "0b28050bac9d3facf2f0226db643ece0",
+      "css": "pause",
+      "orig_css": "pause",
+      "orig_code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "play",
+        "player"
+      ],
+      "code": 59392,
+      "from": 9654,
+      "uid": "ce06b5805120d0c2f8d60cd3f1a4fdb5",
+      "css": "play",
+      "orig_css": "play",
+      "orig_code": 59392,
+      "src": "fontawesome"
+    }
+  ]
+}

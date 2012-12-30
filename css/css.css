@@ -19,3 +19,31 @@ body {
   height: 100%;;
 }
 
+.btn_play_cont a {
+  display: inline-block;
+  width: 7em;
+  height: 7em;
+
+  text-align: center;
+
+  background: grey;
+
+  overflow: hidden;
+
+  -webkit-border-radius: 50em;
+  -moz-border-radius: 50em;
+  -o-border-radius: 50em;
+  -ms-border-radius: 50em;
+  border-radius: 50em;
+}
+.btn_play_cont i:before {
+  position: relative;
+  left:.1em;
+  top:.2em;
+
+  text-align: center;
+  font-size: 5em;
+  color: #fff;
+  opacity: 1;
+}
+
