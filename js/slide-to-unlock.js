@@ -4,6 +4,8 @@ $(function() {
     return $('.slider').offset().left + $('.well').width() - ($('.slider').offset().left - $('.well').offset().left + 160);
   }
 
+  inicial_os = $('.slider').offset();
+
 // Modified from http://reader-download.googlecode.com/svn/trunk/jquery-draggable/index.html
   $.fn.drags = function(opt) {
 
@@ -18,7 +20,6 @@ $(function() {
     happy = false;
     var $well = $('.well');
 
-    var inicial_os = $el.offset();
 
     console.info(inicial_os);
 
@@ -64,13 +65,13 @@ $(function() {
 	 if ($el.offset().left < slide_to_unlock_reach()) { // No reach
 	   $el.animate({left: 0})
 	 } else { // Reach the end of swipe (mouse up)
-	   $el.animate({left: 0}).delay(1000, function() {
+	   $el.animate({left: 0}).delay(2000, function() {
 		happy = false;
-		$well.fadeIn();
-		var stored_slider = $(".slider").clone();
-		$(".slider").remove();
-		$(".well h2").prepend(stored_slider);
+		stored_well = $(".well").clone();
+		$(".well").remove();
+		$("#page-wrap").prepend(stored_well);
 		$(".slider").drags();
+		$(".well").fadeIn();
 	   })
 	 }
     });
