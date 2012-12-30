@@ -5,6 +5,7 @@ $project_folder  = "D:\Dropbox\Sites\onefocus"
 $url_after = "https://build.phonegap.com/apps/270320/push"
 
 ################################################################################
+clear
 
 # Open the folder
 cd $project_folder

@@ -60,5 +60,6 @@ body {
 
 .btn:active {
   background: #B8B8B8 !important;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
