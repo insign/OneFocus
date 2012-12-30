@@ -49,14 +49,14 @@ h2 {
   -o-background-clip: text;
   -ms-background-clip: text;
   background-clip: text;
+  /*
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    text-fill-color: transparent;
 
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  -o-text-fill-color: transparent;
-  -ms-text-fill-color: transparent;
-  text-fill-color: transparent;
-
-  color: transparent;
+    color: transparent;*/
 
   -webkit-animation: slidetounlock 2s infinite;
 

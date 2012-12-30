@@ -1,6 +1,6 @@
 $(function() {
 
-  slide_to_unlock_reach = 720;
+  slide_to_unlock_reach = 260;
 
 // Modified from http://reader-download.googlecode.com/svn/trunk/jquery-draggable/index.html
   $.fn.drags = function(opt) {
