@@ -25,4 +25,10 @@ git push
 Invoke-Expression "cmd.exe /C start $url_after"
 
 cls
-Write-Host OK!
+Write-Host "  .______       _______     ___       _______  ____    ____  __   "
+Write-Host "  |   _  \     |   ____|   /   \     |       \ \   \  /   / |  |  "
+Write-Host "  |  |_)  |    |  |__     /  ^  \    |  .--.  | \   \/   /  |  |  "
+Write-Host "  |      /     |   __|   /  /_\  \   |  |  |  |  \_    _/   |  |  "
+Write-Host "  |  |\  \----.|  |____ /  _____  \  |  '--'  |    |  |     |__|  "
+Write-Host "  | _| `._____||_______/__/     \__\ |_______/     |__|     (__)  "
+Write-Host "  "
