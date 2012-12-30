@@ -1,4 +1,5 @@
 # Made by Helio <insign@gmail.com> to One Focus
+# Copy to me: powershell.exe -file .\onefocus\autobuild.ps1
 
 $project_folder  = "D:\Dropbox\Sites\onefocus"
 $url_after = "https://build.phonegap.com/apps/270320/push"
@@ -24,7 +25,7 @@ git push
 # Open URL after all
 Invoke-Expression "cmd.exe /C start $url_after"
 
-cls
+clear
 Write-Host "  .______       _______     ___       _______  ____    ____  __   "
 Write-Host "  |   _  \     |   ____|   /   \     |       \ \   \  /   / |  |  "
 Write-Host "  |  |_)  |    |  |__     /  ^  \    |  .--.  | \   \/   /  |  |  "
