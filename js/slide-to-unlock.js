@@ -1,7 +1,7 @@
 $(function() {
 
   function slide_to_unlock_reach() {
-    return $('.slider').offset().left + $('.well').width() - ($('.slider').offset().left - $('.well').offset().left + 160);
+    return $('.slider').offset().left + $('.well').width() - ($('.slider').offset().left - $('.well').offset().left + 60);
   }
 
   inicial_os = $('.slider').offset();
@@ -110,8 +110,10 @@ $(function() {
     curX = touch.pageX - this.offsetLeft - 73;
     if (curX <= 0)
 	 return;
-    if (curX > slide_to_unlock_reach()) {
+    if (curX > slide_to_unlock_reach() - 100) {
 	 $('.well').fadeOut();
+	 $('.well').fadeIn();
+
     }
     el.style.webkitTransform = 'translateX(' + curX + 'px)';
   }, false);
