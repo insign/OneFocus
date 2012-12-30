@@ -1,5 +1,5 @@
 # Made by Helio <insign@gmail.com> to One Focus
-# Copy to me: powershell.exe -file .\onefocus\autobuild.ps1
+# Copy to me: powershell.exe -file D:\Dropbox\Sites\onefocus\autobuild.ps1
 
 $project_folder  = "D:\Dropbox\Sites\onefocus"
 $url_after = "https://build.phonegap.com/apps/270320/push"
