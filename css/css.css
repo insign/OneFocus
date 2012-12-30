@@ -24,7 +24,19 @@ body {
   width: 7em;
   height: 7em;
 
-  background: grey;
+  background: #B8B8B8;
+
+  /* RGBa with 0.6 opacity */
+  background: rgba(184,184,184, 0.6);
+  /* For IE 5.5 - 7*/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#6eB8B8B8, endColorstr=#6eB8B8B8);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#6eB8B8B8, endColorstr=#6eB8B8B8)";
+
+  /*Calculo para IE
+  Replace 0.6 with your desired alpha level
+	  Math.floor(0.6 * 184).toString(16);
+  */
 
   -webkit-border-radius: 50em;
   -moz-border-radius: 50em;
