@@ -23,3 +23,6 @@ git push
 
 # Open URL after all
 Invoke-Expression "cmd.exe /C start $url_after"
+
+cls
+Write-Host OK!
