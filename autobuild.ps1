@@ -16,7 +16,9 @@ git add -A
 
 # Ask about the commit message
 [System.Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic') | Out-Null
-$global:commit_msg = [Microsoft.VisualBasic.Interaction]::InputBox("What's the news?", "Commit message", $global:commit_msg)
+$commit_msg = [Environment]::SetEnvironmentVariable("last_commit_msg", "Test value.", "User")
+$commit_msg = [Microsoft.VisualBasic.Interaction]::InputBox("What's the news?", "Commit message", $commit_msg)
+[Environment]::GetEnvironmentVariable("last_commit_msg","User")
 
 # Make the commit
 git commit -a -m $commit_msg
