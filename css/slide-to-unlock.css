@@ -50,13 +50,13 @@ h2 {
   -ms-background-clip: text;
   background-clip: text;
 
-  -webkit-text-fill-color: red;
-  -moz-text-fill-color: red;
-  -o-text-fill-color: red;
-  -ms-text-fill-color: red;
-  text-fill-color: red;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  text-fill-color: transparent;
 
-  color: red;
+  color: transparent;
 
   -webkit-animation: slidetounlock 10s infinite;
   -moz-animation: slidetounlock 10s infinite;
@@ -95,17 +95,17 @@ h2 {
 }
 
 .slider i:before {
-  color: grey;
+  /*color: grey;*/
 
   font-size: .8em;
 
   padding: .3em;
-
-  -webkit-text-fill-color: currentcolor;
-  -moz-text-fill-color: currentcolor;
-  -o-text-fill-color: currentcolor;
-  -ms-text-fill-color: currentcolor;
-  text-fill-color: currentcolor;
+  /*
+    -webkit-text-fill-color: currentcolor;
+    -moz-text-fill-color: currentcolor;
+    -o-text-fill-color: currentcolor;
+    -ms-text-fill-color: currentcolor;
+    text-fill-color: currentcolor;*/
 }
 
 
