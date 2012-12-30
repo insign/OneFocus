@@ -16,7 +16,6 @@ git add -A
 
 # Ask about the commit message
 [System.Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic') | Out-Null
-if ( !$commit_msg ) { $commit_msg = "Small changes"; }
 $commit_msg = [Microsoft.VisualBasic.Interaction]::InputBox("What's the news?", "Commit message", $commit_msg)
 
 # Make the commit
