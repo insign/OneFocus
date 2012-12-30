@@ -12,7 +12,7 @@ clear
 cd $project_folder
 
 # Add all new files and remove inexistents
-git add -A
+git add -A -v
 
 
 # Ask about the commit message
@@ -22,10 +22,10 @@ $commit_msg = [Microsoft.VisualBasic.Interaction]::InputBox("What's the news?", 
 [Environment]::SetEnvironmentVariable("last_commit_msg", $commit_msg, "User")
 
 # Make the commit
-git commit -a -m $commit_msg
+git commit -a -v -m $commit_msg
 
 # Sync commits
-git push
+git push -v
 
 # Open URL after all
 Invoke-Expression "cmd.exe /C start $url_after"
