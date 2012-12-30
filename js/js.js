@@ -17,16 +17,6 @@ _e = {
   }
 };
 
-// Wait for Cordova to load
-//
-document.addEventListener("deviceready", onDeviceReady, false);
-
-// Cordova is ready
-//
-function onDeviceReady() {
-  playAudio("strobe_cut.mp3");
-}
-
 // Audio player
 //
 var my_media = null;
