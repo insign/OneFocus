@@ -11,10 +11,12 @@ $url_after = "https://build.phonegap.com/apps/270320/push"
 clear
 
 # Ask about the commit message (too slow)
-[System.Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic') | Out-Null
-$commit_msg = [Environment]::GetEnvironmentVariable("last_commit_msg","User")
-$commit_msg = [Microsoft.VisualBasic.Interaction]::InputBox("What's the news?", "Commit message", $commit_msg)
-[Environment]::SetEnvironmentVariable("last_commit_msg", $commit_msg, "User")
+#[System.Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic') | Out-Null
+#$commit_msg = [Environment]::GetEnvironmentVariable("last_commit_msg","User")
+#$commit_msg = [Microsoft.VisualBasic.Interaction]::InputBox("What's the news?", "Commit message", $commit_msg)
+#[Environment]::SetEnvironmentVariable("last_commit_msg", $commit_msg, "User")
+
+$commit_msg = 'tests';
 
 # Open the folder
 cd $project_folder
