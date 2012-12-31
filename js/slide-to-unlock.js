@@ -97,6 +97,7 @@ $(function() {
     navigator.notification.alert(
 		  'Você mudou de música', // message
 		  function() {
+		    console.info('Alerta lido');
 		  }, // callback
 		  'Próxima música!', // title
 		  'Entendi'                  // buttonName
