@@ -94,7 +94,12 @@ $(function() {
    * Comment
    */
   function go_happy() {
-
+    navigator.notification.alert(
+		  'You are the winner!', // message
+		  alertDismissed, // callback
+		  'Game Over', // title
+		  'Done'                  // buttonName
+		  );
   }
 
   $(".slider").drags();
@@ -143,9 +148,9 @@ $(function() {
     $('.slider')[0].addEventListener('touchend', function(event) {
 //	 this.style.webkitTransition = '-webkit-transform 0.5s ease-in';
 	 swipe_reached(2);
-	 this.addEventListener('webkitTransitionEnd', function(event) {
+//	 this.addEventListener('webkitTransitionEnd', function(event) {
 //	   this.style.webkitTransition = 'none';
-	 }, false);
+//	 }, false);
 	 this.style.webkitTransform = 'translateX(0px)';
     }, false);
   }
