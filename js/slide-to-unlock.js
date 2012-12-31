@@ -122,7 +122,7 @@ $(function() {
 	 event.preventDefault();
 	 var el = event.target;
 	 var touch = event.touches[0];
-	 curX = touch.pageX - this.offsetLeft - 73;
+	 curX = touch.pageX - this.offsetLeft - 30;
 	 if (curX <= 0)
 	   return;
 	 if (curX > slide_to_unlock_reach_limit() - 100) {
