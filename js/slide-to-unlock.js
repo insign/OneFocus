@@ -78,6 +78,7 @@ $(function() {
 	   console.info('Happy!');
 	 }
     } else if (step == 2) {
+	 go_happy();
 	 $('.slider').animate({left: 0}).delay(2000, function() {
 	   happy_end = false;
 	   stored_well = $(".well").clone();
