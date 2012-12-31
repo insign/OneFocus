@@ -1,5 +1,5 @@
 # Made by Helio <insign@gmail.com> to One Focus
-# Copy to me: powershell.exe -file D:\Dropbox\Sites\onefocus\autobuild.ps1
+# Copy to me: D:\Dropbox\Sites\onefocus.\autobuild.ps1
 
 #$git_path = "C:\Users\Helio\AppData\Local\GitHub\PortableGit_93e8418133eb85e81a81e5e19c272776524496c6\cmd\git.exe"
 $git_path = "git"
@@ -33,8 +33,9 @@ $(Invoke-Expression "$git_path commit -a -v -m $commit_msg")
 # Sync commits
 $(Invoke-Expression "$git_path push -v")
 
-# Open URL after all
+# Open URL after all and play sound
 Invoke-Expression "cmd.exe /C start $url_after"
+[System.Media.SystemSounds]::Asterisk.Play()
 
 #clear
 Write-Host "  .______       _______     ___       _______  ____    ____  __   "
