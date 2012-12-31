@@ -13,7 +13,7 @@ clear
 # Ask about the commit message (too slow)
 #[System.Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic') | Out-Null
 #$commit_msg = [Environment]::GetEnvironmentVariable("last_commit_msg","User")
-$commit_msg = 'tests';
+$commit_msg = "tests";
 $commit_msg = [Microsoft.VisualBasic.Interaction]::InputBox("What's the news?", "Commit message", $commit_msg)
 #[Environment]::SetEnvironmentVariable("last_commit_msg", $commit_msg, "User")
 
