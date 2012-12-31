@@ -95,12 +95,14 @@ $(function() {
    */
   function go_happy() {
     navigator.notification.alert(
-		  'You are the winner!', // message
+		  'Você mudou de música', // message
 		  function() {
 		  }, // callback
-		  'Game Over', // title
-		  'Done'                  // buttonName
+		  'Próxima música!', // title
+		  'Entendi'                  // buttonName
 		  );
+    navigator.notification.beep(2);
+    navigator.notification.vibrate(500);
   }
 
   $(".slider").drags();
