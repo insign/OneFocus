@@ -10,8 +10,6 @@
   width:100%;
   margin: 0 auto;
   margin-top: 4em;
-  border: solid #454545;
-  border-width: 2px 0;
 
 
   background: rgb(10,10,10);
@@ -53,7 +51,7 @@ h2 span {
   z-index: 1000;
 
   padding: 1em .5em;
-  margin-right: 1em;
+  margin-right: .5em;
 
   background: #ffffff;
   background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);

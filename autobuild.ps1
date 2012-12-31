@@ -8,18 +8,17 @@ $url_after = "https://build.phonegap.com/apps/270320/push"
 ################################################################################
 clear
 
-# Open the folder
-cd $project_folder
-
-# Add all new files and remove inexistents
-git add -A -v
-
-
 # Ask about the commit message
 [System.Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic') | Out-Null
 $commit_msg = [Environment]::GetEnvironmentVariable("last_commit_msg","User")
 $commit_msg = [Microsoft.VisualBasic.Interaction]::InputBox("What's the news?", "Commit message", $commit_msg)
 [Environment]::SetEnvironmentVariable("last_commit_msg", $commit_msg, "User")
+
+# Open the folder
+cd $project_folder
+
+# Add all new files and remove inexistents
+git add -A -v
 
 # Make the commit
 git commit -a -v -m $commit_msg
