@@ -79,14 +79,13 @@ $(function() {
 	 }
     } else if (step == 2) {
 	 go_happy();
-	 $slider.animate({left: 0}).delay(2000, function() {
-	   happy_end = false;
-	   stored_well = $(".well").clone();
-	   $(".well").remove();
-	   $("#page-wrap").prepend(stored_well);
-	   $(".slider").drags();
-	   $(".well").fadeIn();
-	 })
+	 $slider.animate({left: 0});
+	 happy_end = false;
+	 stored_well = $(".well").clone();
+	 $(".well").remove();
+	 $("#page-wrap").prepend(stored_well);
+	 $(".slider").drags();
+	 $(".well").fadeIn();
     }
   }
 
@@ -102,7 +101,7 @@ $(function() {
 //		  'Próxima música!', // title
 //		  'Entendi'                  // buttonName
 //		  );
-    navigator.notification.vibrate(500);
+//    navigator.notification.vibrate(500);
     navigator.notification.beep(1);
   }
 
@@ -126,8 +125,8 @@ $(function() {
     }, false);
 
     $slider[0].addEventListener('touchend', function(event) {
-	 this.style.webkitTransition = '-webkit-transform 0.5s ease-in';
 	 swipe_reached(2);
+	 this.style.webkitTransition = '-webkit-transform 0.5s ease-in';
 	 this.addEventListener('webkitTransitionEnd', function(event) {
 	   this.style.webkitTransition = 'none';
 	 }, false);
