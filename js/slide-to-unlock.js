@@ -94,14 +94,14 @@ $(function() {
    * Comment
    */
   function go_happy() {
-    navigator.notification.alert(
-		  'Você mudou de música', // message
-		  function() {
-		    console.info('Alerta lido');
-		  }, // callback
-		  'Próxima música!', // title
-		  'Entendi'                  // buttonName
-		  );
+//    navigator.notification.alert(
+//		  'Você mudou de música', // message
+//		  function() {
+//		    console.info('Alerta lido');
+//		  }, // callback
+//		  'Próxima música!', // title
+//		  'Entendi'                  // buttonName
+//		  );
     navigator.notification.beep(2);
     navigator.notification.vibrate(500);
   }
