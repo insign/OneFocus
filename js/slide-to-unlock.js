@@ -102,36 +102,12 @@ $(function() {
 //		  'Próxima música!', // title
 //		  'Entendi'                  // buttonName
 //		  );
-    navigator.notification.beep(2);
     navigator.notification.vibrate(500);
+    navigator.notification.beep(1);
   }
 
   $(".slider").drags();
 
-
-  //  $(".slider").draggable({
-//    axis: 'x',
-  //    containment: 'parent',
-  //    drag: function(event, ui) {
-//	 if (ui.position.left > 550) {
-  //    $(".well").fadeOut();
-  //	 } else {
-  //	   // Apparently Safari isn't allowing partial opacity on text with background clip? Not sure.
-  //	   // $("h2 span").css("opacity", 100 - (ui.position.left / 5))
-//	 }
-//    },
-  //    stop: function(event, ui) {
-  //	 if (ui.position.left < 551) {
-//	   $(this).animate({
-//	 left: 0
-//	   })
-  //	 }
-//    }
-//  });
-
-  /**
-   * Comment
-   */
   function stu_touch_way() {
     // The following credit: http://www.evanblack.com/blog/touch-slide-to-unlock/
 
