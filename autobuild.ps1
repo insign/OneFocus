@@ -1,7 +1,7 @@
 # Made by Helio <insign@gmail.com> to One Focus
 # Copy to me: powershell.exe -file D:\Dropbox\Sites\onefocus\autobuild.ps1
 
-
+$git_path = "C:\Users\Helio\AppData\Local\GitHub\PortableGit_93e8418133eb85e81a81e5e19c272776524496c6\cmd\git.exe"
 $project_folder  = "D:\Dropbox\Sites\onefocus"
 $url_after = "https://build.phonegap.com/apps/270320/push"
 
@@ -18,13 +18,13 @@ $commit_msg = [Microsoft.VisualBasic.Interaction]::InputBox("What's the news?", 
 cd $project_folder
 
 # Add all new files and remove inexistents
-git add -A -v
+$(Invoke-Expression "$git_path add -A -v")
 
 # Make the commit
-git commit -a -v -m $commit_msg
+$(Invoke-Expression "$git_path commit -a -v -m $commit_msg")
 
 # Sync commits
-git push -v
+$(Invoke-Expression "$git_path push -v")
 
 # Open URL after all
 Invoke-Expression "cmd.exe /C start $url_after"
