@@ -101,8 +101,8 @@ $(function() {
 //		  'Próxima música!', // title
 //		  'Entendi'                  // buttonName
 //		  );
-//    navigator.notification.vibrate(500);
-    navigator.notification.beep(1);
+    navigator.notification.vibrate(500);
+//    navigator.notification.beep(1);
   }
 
   $(".slider").drags();
