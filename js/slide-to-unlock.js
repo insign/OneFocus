@@ -141,16 +141,16 @@ $(function() {
 	 if (curX > slide_to_unlock_reach_limit() - 100) {
 	   swipe_reached(1);
 	 }
-//	 this.style.webkitTransition = '-webkit-transform 0s ease-in';
+	 this.style.webkitTransition = 'none';
 	 el.style.webkitTransform = 'translateX(' + curX + 'px)';
     }, false);
 
     $('.slider')[0].addEventListener('touchend', function(event) {
-//	 this.style.webkitTransition = '-webkit-transform 0.5s ease-in';
+	 this.style.webkitTransition = '-webkit-transform 0.5s ease-in';
 	 swipe_reached(2);
-//	 this.addEventListener('webkitTransitionEnd', function(event) {
-//	   this.style.webkitTransition = 'none';
-//	 }, false);
+	 this.addEventListener('webkitTransitionEnd', function(event) {
+	   this.style.webkitTransition = 'none';
+	 }, false);
 	 this.style.webkitTransform = 'translateX(0px)';
     }, false);
   }
