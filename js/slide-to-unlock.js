@@ -96,7 +96,8 @@ $(function() {
   function go_happy() {
     navigator.notification.alert(
 		  'You are the winner!', // message
-		  alertDismissed, // callback
+		  function() {
+		  }, // callback
 		  'Game Over', // title
 		  'Done'                  // buttonName
 		  );
