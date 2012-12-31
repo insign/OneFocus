@@ -133,7 +133,7 @@ $(function() {
 
     $('.slider')[0].addEventListener('touchend', function(event) {
 	 swipe_reached(2);
-	 this.style.webkitTransition = '-webkit-transform 0.8s ease-in';
+	 this.style.webkitTransition = '-webkit-transform 0.001s ease-in';
 	 this.addEventListener('webkitTransitionEnd', function(event) {
 	   this.style.webkitTransition = 'none';
 	 }, false);
