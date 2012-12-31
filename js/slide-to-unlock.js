@@ -90,6 +90,13 @@ $(function() {
     }
   }
 
+  /**
+   * Comment
+   */
+  function go_happy() {
+
+  }
+
   $(".slider").drags();
 
 
@@ -134,8 +141,8 @@ $(function() {
     }, false);
 
     $('.slider')[0].addEventListener('touchend', function(event) {
-	 swipe_reached(2);
 	 this.style.webkitTransition = '-webkit-transform 0.5s ease-in';
+	 swipe_reached(2);
 	 this.addEventListener('webkitTransitionEnd', function(event) {
 	   this.style.webkitTransition = 'none';
 	 }, false);
