@@ -1,11 +1,14 @@
 $(function() {
+  $well = $('.well');
+  $slider = $('.slider');
+  inicial_os = $slider.offset();
+  happy_end = false;
 
   function slide_to_unlock_reach_limit() {
-    return $('.slider').offset().left + $('.well').width() - ($('.slider').offset().left - $('.well').offset().left + 60);
+    return $slider.offset().left + $well.width() - ($slider.offset().left - $well.offset().left + 60);
   }
 
-  inicial_os = $('.slider').offset();
-  happy_end = false;
+
 
 // Modified from http://reader-download.googlecode.com/svn/trunk/jquery-draggable/index.html
   $.fn.drags = function(opt) {
@@ -17,9 +20,6 @@ $(function() {
     } else {
 	 var $el = this.find(opt.handle);
     }
-
-    var $well = $('.well');
-
 
     console.info(inicial_os);
 
@@ -72,14 +72,14 @@ $(function() {
   function swipe_reached(step) {
     if (step == 1) {
 	 if (!happy_end) {
-	   $('.well').fadeOut();
-	   $('.slider').trigger('mouseup').trigger('touchend');
+	   $well.fadeOut();
+	   $slider.trigger('mouseup').trigger('touchend');
 	   happy_end = true;
 	   console.info('Happy!');
 	 }
     } else if (step == 2) {
 	 go_happy();
-	 $('.slider').animate({left: 0}).delay(2000, function() {
+	 $slider.animate({left: 0}).delay(2000, function() {
 	   happy_end = false;
 	   stored_well = $(".well").clone();
 	   $(".well").remove();
@@ -132,7 +132,7 @@ $(function() {
   function stu_touch_way() {
     // The following credit: http://www.evanblack.com/blog/touch-slide-to-unlock/
 
-    $('.slider')[0].addEventListener('touchmove', function(event) {
+    $slider[0].addEventListener('touchmove', function(event) {
 	 event.preventDefault();
 	 var el = event.target;
 	 var touch = event.touches[0];
@@ -146,7 +146,7 @@ $(function() {
 	 el.style.webkitTransform = 'translateX(' + curX + 'px)';
     }, false);
 
-    $('.slider')[0].addEventListener('touchend', function(event) {
+    $slider[0].addEventListener('touchend', function(event) {
 	 this.style.webkitTransition = '-webkit-transform 0.5s ease-in';
 	 swipe_reached(2);
 	 this.addEventListener('webkitTransitionEnd', function(event) {
