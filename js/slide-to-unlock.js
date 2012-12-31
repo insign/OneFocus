@@ -122,7 +122,7 @@ $(function() {
 	 event.preventDefault();
 	 var el = event.target;
 	 var touch = event.touches[0];
-	 curX = touch.pageX - this.offsetLeft;
+	 curX = touch.pageX - this.offsetLeft - 73;
 	 if (curX <= 0)
 	   return;
 	 if (curX > slide_to_unlock_reach_limit() - 100) {
@@ -133,7 +133,7 @@ $(function() {
 
     $('.slider')[0].addEventListener('touchend', function(event) {
 	 swipe_reached(2);
-	 this.style.webkitTransition = '-webkit-transform 0.3s ease-in';
+	 this.style.webkitTransition = '-webkit-transform 0.1s ease-in';
 	 this.addEventListener('webkitTransitionEnd', function(event) {
 	   this.style.webkitTransition = 'none';
 	 }, false);
