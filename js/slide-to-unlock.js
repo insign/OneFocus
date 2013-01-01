@@ -75,7 +75,6 @@ $(function() {
 	   console.info('Happy!');
 	 }
     } else if (step == 2) {
-	 go_happy();
 	 $slider.animate({left: 0});
 	 happy_end = false;
 	 stored_well = $(".well").clone();
@@ -83,6 +82,8 @@ $(function() {
 	 $("#page-wrap").prepend(stored_well);
 	 $(".slider").drags();
 	 $(".well").fadeIn();
+
+	 go_happy();
     }
   }
 
