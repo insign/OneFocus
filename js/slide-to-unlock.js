@@ -114,7 +114,7 @@ $(function() {
 	 curX = touch.pageX - this.offsetLeft - 30;
 	 if (curX <= 0)
 	   return;
-	 if (curX > slide_to_unlock_reach_limit() - 100) {
+	 if (curX > slide_to_unlock_reach_limit()) {
 	   swipe_reached(1);
 	   swipe_reached(2);
 	 }
