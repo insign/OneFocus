@@ -116,13 +116,13 @@ $(function() {
 	   return;
 	 if (curX > slide_to_unlock_reach_limit() - 100) {
 	   swipe_reached(1);
+	   swipe_reached(2);
 	 }
 	 this.style.webkitTransition = 'none';
 	 el.style.webkitTransform = 'translateX(' + curX + 'px)';
     }, false);
 
     $slider[0].addEventListener('touchend', function(event) {
-	 swipe_reached(2);
 	 this.style.webkitTransition = '-webkit-transform 0.5s ease-in';
 	 this.addEventListener('webkitTransitionEnd', function(event) {
 	   this.style.webkitTransition = 'none';
