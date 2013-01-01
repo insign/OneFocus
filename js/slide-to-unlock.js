@@ -66,9 +66,6 @@ $(function() {
     });
   }
 
-  /**
-   * Comment
-   */
   function swipe_reached(step) {
     if (step == 1) {
 	 if (!happy_end) {

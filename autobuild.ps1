@@ -1,14 +1,21 @@
 # Made by Helio <insign@gmail.com> to One Focus
-# Copy to me: D:\Dropbox\Sites\onefocus.\autobuild.ps1
+# Copy to me: .\autobuild.ps1
+
+$author = "Helio Oliveira"
+$email = "insign@gmail.com"
 
 #$git_path = "C:\Users\Helio\AppData\Local\GitHub\PortableGit_93e8418133eb85e81a81e5e19c272776524496c6\cmd\git.exe"
 $git_path = "git"
-$project_folder  = "D:\Dropbox\Sites\onefocus"
+$project_folder  = "Z:\Dropbox\Sites\onefocus"
 $git_branch = "master"
 $url_after = "https://build.phonegap.com/apps/270320/push"
 
 ################################################################################
 clear
+
+$(Invoke-Expression "$git_path config --global user.email '$email'")
+$(Invoke-Expression "$git_path config --global user.name '$author'")
+
 
 # Ask about the commit message (too slow)
 #[System.Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic') | Out-Null
