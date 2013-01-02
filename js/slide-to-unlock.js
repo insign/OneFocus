@@ -1,4 +1,4 @@
-var happy_end = false, $well, $slider, $label;
+var happy_end = false, $well, $slider, $label, touch_way = false;
 
 function stu_vars() {
   $well = $('.well');
@@ -25,7 +25,9 @@ $.fn.drags = function(opt) {
   stu_vars();
 
   $slider.animate({left: 0}, function() {
-    happy_end = false;
+    if (!touch_way) {
+	 happy_end = false;
+    }
   });
 
   $well.fadeIn();
@@ -118,6 +120,7 @@ function stu_touch_way() {
   // The following credit: http://www.evanblack.com/blog/touch-slide-to-unlock/
 
   $slider[0].addEventListener('touchmove', function(event) {
+    touch_way = true;
     event.preventDefault();
     var el = event.target;
     var touch = event.touches[0];
