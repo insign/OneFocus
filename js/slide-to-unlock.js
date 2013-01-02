@@ -91,8 +91,7 @@ $(function() {
    * Comment
    */
   function go_happy() {
-//    alert('Você mudou de música')
-
+//    alert('Você mudou de música'
   }
 
   $(".slider").drags();
