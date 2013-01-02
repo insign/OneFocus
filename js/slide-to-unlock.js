@@ -113,7 +113,7 @@ function stu_touch_way() {
 
   // The following credit: http://www.evanblack.com/blog/touch-slide-to-unlock/
 
-  $slider.addEventListener('touchmove', function(event) {
+  $slider[0].addEventListener('touchmove', function(event) {
     event.preventDefault();
     var el = event.target;
     var touch = event.touches[0];
@@ -128,7 +128,7 @@ function stu_touch_way() {
     el.style.webkitTransform = 'translateX(' + curX + 'px)';
   }, false);
 
-  $slider.addEventListener('touchend', function(event) {
+  $slider[0].addEventListener('touchend', function(event) {
     this.style.webkitTransition = '-webkit-transform 0.5s ease-in';
     this.addEventListener('webkitTransitionEnd', function(event) {
 	 this.style.webkitTransition = 'none';
