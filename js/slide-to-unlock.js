@@ -6,7 +6,7 @@ function slide_to_unlock_reach_limit() {
   $label = $('.well .label');
 
 //  return $slider.offset().left + $well.width() - ($slider.offset().left - $well.offset().left + ($slider.width() * 2));
-  return $label.offset().left + ($label.width() / 2);
+  return $label.offset().left + ($label.width() / 1.5);
 }
 
 jQuery(document).ready(function($) {
@@ -117,6 +117,7 @@ function stu_touch_way() {
     event.preventDefault();
     var el = event.target;
     var touch = event.touches[0];
+    this.style.webkitTransition = 'none';
     curX = touch.pageX - this.offsetLeft - 30;
     if (curX <= 0)
 	 return;
@@ -124,7 +125,6 @@ function stu_touch_way() {
 	 swipe_event('reached');
 	 $slider.trigger('touchend');
     } else {
-	 this.style.webkitTransition = 'none';
 	 el.style.webkitTransform = 'translateX(' + curX + 'px)';
     }
   }, false);
