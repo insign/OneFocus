@@ -107,7 +107,7 @@ function swipe_event(step) {
 
 function go_happy() {
   console.info("Final feliz!");
-  navigator.notification.vibrate(500);
+  navigator.notification.vibrate(200);
 }
 
 function stu_touch_way() {
