@@ -91,14 +91,7 @@ $(function() {
    * Comment
    */
   function go_happy() {
-    navigator.notification.alert(
-		  'Você mudou de música', // message
-		  function() {
-		    console.info('Alerta lido');
-		  }, // callback
-		  'Próxima música!', // title
-		  'Entendi'                  // buttonName
-		  );
+//    alert('Você mudou de música')
 
   }
 
