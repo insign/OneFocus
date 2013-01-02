@@ -6,7 +6,7 @@ function slide_to_unlock_reach_limit() {
   $label = $('.well .label');
 
 //  return $slider.offset().left + $well.width() - ($slider.offset().left - $well.offset().left + ($slider.width() * 2));
-  return $label.offset().left + ($label.width() / 1.5);
+  return $label.offset().left + ($label.width() / 3);
 }
 
 jQuery(document).ready(function($) {
