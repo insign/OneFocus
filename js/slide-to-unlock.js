@@ -123,9 +123,11 @@ function stu_touch_way() {
     if (curX > slide_to_unlock_reach_limit()) {
 	 swipe_event('reached');
 	 $slider.trigger('touchend');
+    } else {
+	 this.style.webkitTransition = 'none';
+	 el.style.webkitTransform = 'translateX(' + curX + 'px)';
     }
-    this.style.webkitTransition = 'none';
-    el.style.webkitTransform = 'translateX(' + curX + 'px)';
+  }
   }, false);
 
   $slider[0].addEventListener('touchend', function(event) {
