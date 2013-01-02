@@ -31,7 +31,7 @@ $.fn.drags = function(opt) {
 
   console.info(inicial_os);
 
-//  stu_touch_way();
+  stu_touch_way();
 
   return $el.css('cursor', opt.cursor)
 		.on("mousedown", function(e) {
