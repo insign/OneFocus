@@ -1,8 +1,10 @@
 function slide_to_unlock_reach_limit() {
   $well = $('.well');
   $slider = $('.slider');
+  $label = $('.well .label');
 
-  return $slider.offset().left + $well.width() - ($slider.offset().left - $well.offset().left + ($slider.width() * 2));
+//  return $slider.offset().left + $well.width() - ($slider.offset().left - $well.offset().left + ($slider.width() * 2));
+  return $label.offset().left + ($label.width() / 2);
 }
 
 jQuery(document).ready(function($) {
@@ -57,6 +59,7 @@ $.fn.drags = function(opt) {
 	 });
 	 if ($el.offset().left > slide_to_unlock_reach_limit()) { // Swipe finished! (mouse still holded)
 	   swipe_event('reached');
+	   $slider.trigger('mouseup')
 	 }
     });
     e.preventDefault(); // disable selection
@@ -81,7 +84,6 @@ function swipe_event(step) {
 	 $well.fadeOut('fast', function() {
 	   swipe_event(2)
 	 });
-	 $slider.trigger('mouseup')
 	 console.info('Happy!');
 	 happy_end = true;
     }
@@ -122,6 +124,7 @@ function stu_touch_way() {
 	 return;
     if (curX > slide_to_unlock_reach_limit()) {
 	 swipe_event('reached');
+	 $slider.trigger('touchend');
     }
     this.style.webkitTransition = 'none';
     el.style.webkitTransform = 'translateX(' + curX + 'px)';
