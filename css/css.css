@@ -63,7 +63,7 @@ body {
 .btn_central_cont .icon-play:before {
   position: relative;
   left:-.04em;;
-  top:.09em;
+  top:.04em;
 }
 
 .btn:active {
