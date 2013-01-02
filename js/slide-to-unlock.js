@@ -125,7 +125,7 @@ function stu_touch_way() {
     } else if (curX > 0) {
 	 el.style.webkitTransform = 'translateX(' + curX + 'px)';
     } else {
-	 return
+	 return;
     }
   }, false);
 
