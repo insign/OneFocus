@@ -56,8 +56,7 @@ $.fn.drags = function(opt) {
 		  pos_x = $drag.offset().left + drg_w - e.pageX;
     $drag.css('z-index', 1000).parents().on("mousemove", function(e) {
 	 var var_x = e.pageX + pos_x - drg_w
-	 $('.draggable')
-		    .offset({
+	 $drag.offset({
 	   top: inicial_slider_os.top,
 	   left: var_x
 	 })
