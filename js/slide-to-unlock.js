@@ -82,11 +82,11 @@ function swipe_event(step) {
 
   if (step == 'reached') {
     if (!happy_end) {
+	 happy_end = true;
 	 $well.fadeOut('fast', function() {
 	   swipe_event(2)
 	 });
 	 console.info('Happy!');
-	 happy_end = true;
     }
   } else if (step == 2) {
     stored_well = $well.clone();
