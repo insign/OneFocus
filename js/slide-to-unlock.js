@@ -1,3 +1,5 @@
+happy_end = false;
+
 function slide_to_unlock_reach_limit() {
   $well = $('.well');
   $slider = $('.slider');
@@ -30,8 +32,6 @@ $.fn.drags = function(opt) {
   } else {
     var $el = this.find(opt.handle);
   }
-
-  console.info(inicial_slider_os);
 
   stu_touch_way();
 
@@ -104,7 +104,6 @@ function swipe_event(step) {
  * Comment
  */
 function go_happy() {
-//  alert('Você mudou de música')
   console.info("Final feliz!");
 }
 
