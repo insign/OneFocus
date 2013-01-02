@@ -124,6 +124,7 @@ function stu_touch_way() {
 	 swipe_event('reached');
 	 $(this).hide();
 	 this.style.webkitTransform = 'translateX(0px)';
+	 $(this).fadeIn();
     } else if (curX > 0) {
 	 el.style.webkitTransform = 'translateX(' + curX + 'px)';
     } else {
@@ -132,7 +133,6 @@ function stu_touch_way() {
   }, false);
 
   $slider[0].addEventListener('touchend', function(event) {
-    $(this).show();
     this.style.webkitTransition = '-webkit-transform 0.5s ease-in';
     this.addEventListener('webkitTransitionEnd', function(event) {
 	 this.style.webkitTransition = 'none';
