@@ -127,7 +127,6 @@ function stu_touch_way() {
 	 this.style.webkitTransition = 'none';
 	 el.style.webkitTransform = 'translateX(' + curX + 'px)';
     }
-  }
   }, false);
 
   $slider[0].addEventListener('touchend', function(event) {
