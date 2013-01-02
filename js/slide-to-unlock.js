@@ -1,15 +1,15 @@
-var happy_end = false, $well, $slider, $label, touch_way = false;
+var happy_end = false, $stn, $well, $slider, $label, touch_way = false, inicial_slider_os;
 
 function stu_vars() {
-  $well = $('.well');
-  $slider = $('.slider');
-  $label = $('.well .label');
+  $stn = $('#stn');
+  $well = $('#stn .well');
+  $slider = $('#stn .slider');
+  $label = $('#stn .well .label');
 }
 
 function slide_to_unlock_reach_limit() {
   stu_vars();
 
-//  return $slider.offset().left + $well.width() - ($slider.offset().left - $well.offset().left + ($slider.width() * 2));
   return $label.offset().left + ($label.width() / 3);
 }
 
@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
   stu_vars();
 
   inicial_slider_os = $slider.offset();
-  $(".slider").drags();
+  $slider.drags();
 });
 
 $.fn.drags = function(opt) {
@@ -85,7 +85,6 @@ $.fn.drags = function(opt) {
 function swipe_event(step) {
   stu_vars();
 
-
   if (step == 'reached') {
     if (!happy_end) {
 	 happy_end = true;
@@ -97,7 +96,7 @@ function swipe_event(step) {
   } else if (step == 2) {
     stored_well = $well.clone();
     $well.remove();
-    $("#page-wrap").prepend(stored_well);
+    $stn.prepend(stored_well);
     stu_vars();
 
     $slider.drags();
@@ -106,18 +105,12 @@ function swipe_event(step) {
   }
 }
 
-/**
- * Comment
- */
 function go_happy() {
   console.info("Final feliz!");
 }
 
 function stu_touch_way() {
   stu_vars();
-
-
-  // The following credit: http://www.evanblack.com/blog/touch-slide-to-unlock/
 
   $slider[0].addEventListener('touchmove', function(event) {
     touch_way = true;
