@@ -20,8 +20,9 @@ $.fn.drags = function(opt) {
 
   $well = $('.well');
   $slider = $('.slider');
-  happy_end = false;
-  $slider.animate({left: 0});
+  $slider.animate({left: 0}, function() {
+    happy_end = false;
+  });
 
   $well.fadeIn();
 
@@ -121,7 +122,6 @@ function stu_touch_way() {
     curX = touch.pageX - this.offsetLeft - 30;
     if (curX > slide_to_unlock_reach_limit()) {
 	 swipe_event('reached');
-	 $slider.trigger('touchend');
     } else if (curX > 0) {
 	 el.style.webkitTransform = 'translateX(' + curX + 'px)';
     } else {
@@ -135,5 +135,6 @@ function stu_touch_way() {
 	 this.style.webkitTransition = 'none';
     }, false);
     this.style.webkitTransform = 'translateX(0px)';
+    happy_end = false;
   }, false);
 }
