@@ -1,25 +1,29 @@
-happy_end = false;
+var happy_end = false, $well, $slider, $label;
 
-function slide_to_unlock_reach_limit() {
+function stu_vars() {
   $well = $('.well');
   $slider = $('.slider');
   $label = $('.well .label');
+}
+
+function slide_to_unlock_reach_limit() {
+  stu_vars();
 
 //  return $slider.offset().left + $well.width() - ($slider.offset().left - $well.offset().left + ($slider.width() * 2));
   return $label.offset().left + ($label.width() / 3);
 }
 
 jQuery(document).ready(function($) {
-  $well = $('.well');
-  $slider = $('.slider');
+  stu_vars();
+
   inicial_slider_os = $slider.offset();
   $(".slider").drags();
 });
 
 $.fn.drags = function(opt) {
 
-  $well = $('.well');
-  $slider = $('.slider');
+  stu_vars();
+
   $slider.animate({left: 0}, function() {
     happy_end = false;
   });
@@ -77,8 +81,8 @@ $.fn.drags = function(opt) {
 }
 
 function swipe_event(step) {
-  $well = $('.well');
-  $slider = $('.slider');
+  stu_vars();
+
 
   if (step == 'reached') {
     if (!happy_end) {
@@ -92,8 +96,7 @@ function swipe_event(step) {
     stored_well = $well.clone();
     $well.remove();
     $("#page-wrap").prepend(stored_well);
-    $well = $('.well');
-    $slider = $('.slider');
+    stu_vars();
 
     $slider.drags();
 
@@ -109,8 +112,8 @@ function go_happy() {
 }
 
 function stu_touch_way() {
-  $well = $('.well');
-  $slider = $('.slider');
+  stu_vars();
+
 
   // The following credit: http://www.evanblack.com/blog/touch-slide-to-unlock/
 
@@ -121,8 +124,8 @@ function stu_touch_way() {
     this.style.webkitTransition = 'none';
     curX = touch.pageX - this.offsetLeft - 30;
     if (curX > slide_to_unlock_reach_limit()) {
-	 swipe_event('reached');
 	 this.style.webkitTransform = 'translateX(0px)';
+	 swipe_event('reached');
     } else if (curX > 0) {
 	 el.style.webkitTransform = 'translateX(' + curX + 'px)';
     } else {
