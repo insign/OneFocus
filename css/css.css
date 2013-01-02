@@ -101,6 +101,13 @@ body {
 100% { -ms-transform: rotate(360deg);}
 }
 
+#stn {
+  display: block;
+  width: 100%;
+
+  position: fixed;
+  bottom: 0;
+}
 
 #stn .well .label {
   font-family: OpenSansRegular

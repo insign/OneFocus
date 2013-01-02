@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
 _e = {
   resize: function() {
     _.body.css({
-	 height: _.wind.height()
+	 height: _.body.height()
     });
   }
 };
