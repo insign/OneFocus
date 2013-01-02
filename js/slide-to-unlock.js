@@ -117,10 +117,9 @@ function stu_touch_way() {
     event.preventDefault();
     var el = event.target;
     var touch = event.touches[0];
-    curX = touch.pageX - this.offsetLeft - 40;
+    curX = touch.pageX - this.offsetLeft - 30;
     if (curX <= 0)
-	 console.info('curx igual a 0');
-    return;
+	 return;
     if (curX > slide_to_unlock_reach_limit()) {
 	 swipe_event('reached');
     }
