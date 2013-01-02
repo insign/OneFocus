@@ -133,6 +133,7 @@ function stu_touch_way() {
   }, false);
 
   $slider[0].addEventListener('touchend', function(event) {
+    $(this).animate({opacity: 1})
     this.style.webkitTransition = '-webkit-transform 0.5s ease-in';
     this.addEventListener('webkitTransitionEnd', function(event) {
 	 this.style.webkitTransition = 'none';
