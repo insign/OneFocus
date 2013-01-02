@@ -28,10 +28,10 @@
   <feature name="http://api.phonegap.com/1.0/network"/>
   <feature name="http://api.phonegap.com/1.0/notification"/>
 
-  <icon src="img/high.png" />
+<!--  <icon src="img/high.png" />
   <icon src="img/icon/android/mdpi.png"   gap:platform="android"    gap:density="mdpi" />
   <icon src="img/icon/android/hdpi.png"   gap:platform="android"    gap:density="hdpi" />
   <icon src="img/icon/android/xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
-  <icon src="img/icon/android/xxhdpi.png"  gap:platform="android"    gap:density="xxhdpi" />
+  <icon src="img/icon/android/xxhdpi.png"  gap:platform="android"    gap:density="xxhdpi" />-->
 
 </widget>
