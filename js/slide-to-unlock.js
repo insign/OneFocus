@@ -113,13 +113,14 @@ function stu_touch_way() {
 
   // The following credit: http://www.evanblack.com/blog/touch-slide-to-unlock/
 
-  $slider[0].addEventListener('touchmove', function(event) {
+  $slider.addEventListener('touchmove', function(event) {
     event.preventDefault();
     var el = event.target;
     var touch = event.touches[0];
-    curX = touch.pageX - this.offsetLeft - $(this).width();
+    curX = touch.pageX - this.offsetLeft - 40;
     if (curX <= 0)
-	 return;
+	 console.info('curx igual a 0');
+    return;
     if (curX > slide_to_unlock_reach_limit()) {
 	 swipe_event('reached');
     }
@@ -127,7 +128,7 @@ function stu_touch_way() {
     el.style.webkitTransform = 'translateX(' + curX + 'px)';
   }, false);
 
-  $slider[0].addEventListener('touchend', function(event) {
+  $slider.addEventListener('touchend', function(event) {
     this.style.webkitTransition = '-webkit-transform 0.5s ease-in';
     this.addEventListener('webkitTransitionEnd', function(event) {
 	 this.style.webkitTransition = 'none';

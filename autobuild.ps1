@@ -24,7 +24,7 @@ $(Invoke-Expression "$git_path config --global user.name '$author'")
 #$commit_msg = [Microsoft.VisualBasic.Interaction]::InputBox("What's the news?", "Commit message", $commit_msg)
 #[Environment]::SetEnvironmentVariable("last_commit_msg", $commit_msg, "User")
 
-$commit_msg = 'tests';
+$commit_msg = 'update for build test';
 
 # Open the folder
 cd $project_folder
