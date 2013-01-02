@@ -3,7 +3,7 @@
 # Copy to me (once): Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 
 $git_path = "$env:LOCALAPPDATA\GitHub\PortableGit_93e8418133eb85e81a81e5e19c272776524496c6\cmd\git.exe"
-$project_folder  = "Z:\Dropbox\Sites\onefocus"
+$project_folder  = "D:\Dropbox\Sites\onefocus"
 $url_after = "https://build.phonegap.com/apps/270320/push"
 
 $author = "Helio Oliveira"
