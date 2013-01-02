@@ -8,7 +8,7 @@ function slide_to_unlock_reach_limit() {
 jQuery(document).ready(function($) {
   $well = $('.well');
   $slider = $('.slider');
-  inicial_os = $slider.offset();
+  inicial_slider_os = $slider.offset();
   $(".slider").drags();
 });
 
@@ -17,8 +17,8 @@ $.fn.drags = function(opt) {
   $well = $('.well');
   $slider = $('.slider');
   happy_end = false;
+  $slider.animate({left: 0});
 
-  $slider.animate({left: 0}, 0);
   $well.fadeIn();
 
   opt = $.extend({handle: "", cursor: "move"}, opt);
@@ -29,7 +29,7 @@ $.fn.drags = function(opt) {
     var $el = this.find(opt.handle);
   }
 
-  console.info(inicial_os);
+  console.info(inicial_slider_os);
 
   stu_touch_way();
 
@@ -49,7 +49,7 @@ $.fn.drags = function(opt) {
 	 var var_x = e.pageX + pos_x - drg_w
 	 $('.draggable')
 		    .offset({
-	   top: inicial_os.top,
+	   top: inicial_slider_os.top,
 	   left: var_x
 	 })
 		    .on("mouseup", function(e) {
