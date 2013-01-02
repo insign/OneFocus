@@ -88,7 +88,6 @@ function swipe_event(step) {
 	 happy_end = true;
     }
   } else if (step == 2) {
-    happy_end = false;
     stored_well = $well.clone();
     $well.remove();
     $("#page-wrap").prepend(stored_well);
