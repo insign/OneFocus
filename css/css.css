@@ -19,7 +19,7 @@ body {
   height: 100%;;
 }
 
-.btn_play_cont .btn.play {
+.btn_central_cont .btn_central {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 
   margin:3em 0;
@@ -48,14 +48,15 @@ body {
   -ms-border-radius: 50em;
   border-radius: 50em;
 }
-.btn_play_cont i:before {
-  position: relative;
-  left:.01em;
-  top:.12em;
-
-  font-size: 9em;
+.btn_central_cont i {
+  font-size: 8em;
   color: #fff;
   opacity: 1;
+}
+.btn_central_cont .icon-play:before {
+  position: relative;
+  left:-.04em;;
+  top:.09em;
 }
 
 .btn:active {
@@ -65,5 +66,31 @@ body {
   -o-tap-highlight-color: rgba(0,0,0,0);
   -ms-tap-highlight-color: rgba(0,0,0,0);
   tap-highlight-color: rgba(0,0,0,0);
+}
+
+.btn_central_cont .icon-wait {
+  display: inline-block;
+
+  -webkit-animation: spin 5s infinite linear;
+  -moz-animation: spin 5s infinite linear;
+  -o-animation: spin 5s infinite linear;
+  -ms-animation: spin 5s infinite linear;
+  animation: spin 5s infinite linear;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg);}
+100% { -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+  0% { -moz-transform: rotate(0deg);}
+100% { -moz-transform: rotate(360deg);}
+}
+@-o-keyframes spin {
+  0% { -o-transform: rotate(0deg);}
+100% { -o-transform: rotate(360deg);}
+}
+@-ms-keyframes spin {
+  0% { -ms-transform: rotate(0deg);}
+100% { -ms-transform: rotate(360deg);}
 }
 

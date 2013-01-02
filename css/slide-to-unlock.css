@@ -70,7 +70,7 @@ h2 span {
   border-radius: .2em;
 }
 
-.slider:active {
+.slider {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -moz-tap-highlight-color: rgba(0,0,0,0);
   -o-tap-highlight-color: rgba(0,0,0,0);
