@@ -122,7 +122,7 @@ function stu_touch_way() {
     curX = touch.pageX - this.offsetLeft - 30;
     if (curX > slide_to_unlock_reach_limit()) {
 	 swipe_event('reached');
-	 $(this).hide();
+	 $(this).fadeOut(0);
 	 this.style.webkitTransform = 'translateX(0px)';
 	 $(this).fadeIn();
     } else if (curX > 0) {
