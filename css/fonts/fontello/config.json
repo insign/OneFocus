@@ -46,18 +46,18 @@
         "progress",
         "wait"
       ],
-      "code": 59444,
+      "code": 59442,
       "meta": {
         "email": "berbentseva_angela@yahoo.com",
         "author": "Angela Berbentseva, specially for fontello"
       },
-      "uid": "9bd60140934a1eb9236fd7a8ab1ff6ba",
+      "uid": "2a6740fc2f9d0edea54205963f662594",
       "css-ext": "animate-spin",
       "css": "wait",
-      "orig_css": "spin4",
-      "orig_code": 59444,
+      "orig_css": "spin3",
+      "orig_code": 59442,
       "src": "fontelico",
-      "from": 59444
+      "from": 59442
     }
   ]
 }
