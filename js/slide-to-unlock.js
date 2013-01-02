@@ -119,13 +119,13 @@ function stu_touch_way() {
     var touch = event.touches[0];
     this.style.webkitTransition = 'none';
     curX = touch.pageX - this.offsetLeft - 30;
-    if (curX <= 0)
-	 return;
     if (curX > slide_to_unlock_reach_limit()) {
 	 swipe_event('reached');
 	 $slider.trigger('touchend');
-    } else {
+    } else if (curX > 0) {
 	 el.style.webkitTransform = 'translateX(' + curX + 'px)';
+    } else {
+	 return
     }
   }, false);
 
