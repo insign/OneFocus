@@ -36,7 +36,7 @@ $(Invoke-Expression "$git_path checkout $git_branch")
 $(Invoke-Expression "$git_path add -A -v")
 
 # Make the commit
-$(Invoke-Expression "$git_path commit -a -v -m $commit_msg")
+$(Invoke-Expression "$git_path commit -a -v -m '$commit_msg'")
 
 # Sync commits
 $(Invoke-Expression "$git_path push -v")
