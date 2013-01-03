@@ -12,7 +12,7 @@
   font-family: OpenSansLight, sans-serif;
 }
 html {
-  background:url(../img/Aurora_by_Edward_LOVER4ever.jpg) center top no-repeat #642A6B;
+  background:url(../img/Aurora_by_Edward_LOVER4ever.jpg) center top no-repeat #000;
 }
 
 body {
@@ -75,14 +75,14 @@ body {
   tap-highlight-color: rgba(0,0,0,0);
 }
 
-.btn_central_cont .icon-wait {
+.btn_central {
   display: inline-block;
 
-  -webkit-animation: spin 5s infinite linear;
-  -moz-animation: spin 5s infinite linear;
-  -o-animation: spin 5s infinite linear;
-  -ms-animation: spin 5s infinite linear;
-  animation: spin 5s infinite linear;
+  -webkit-animation: spin 4s infinite linear;
+  -moz-animation: spin 4s infinite linear;
+  -o-animation: spin 4s infinite linear;
+  -ms-animation: spin 4s infinite linear;
+  animation: spin 4s infinite linear;
 }
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg);}
@@ -99,6 +99,10 @@ body {
 @-ms-keyframes spin {
   0% { -ms-transform: rotate(0deg);}
 100% { -ms-transform: rotate(360deg);}
+}
+
+.about .title {
+  font-size: 1.2em;
 }
 
 #stn {

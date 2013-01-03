@@ -1,3 +1,5 @@
+// @TODO Cordava ondeviceready & cordova_in_use
+
 jQuery(document).ready(function($) {
   _ = {
     body: $('body'),

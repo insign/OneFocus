@@ -90,7 +90,6 @@ function swipe_event(step) {
 	 $well.fadeOut(0, function() {
 	   swipe_event(2)
 	 });
-	 console.info('Happy!');
     }
   } else if (step == 2) {
     stored_well = $well.clone();
@@ -105,7 +104,7 @@ function swipe_event(step) {
 }
 
 function go_happy() {
-  console.info("Final feliz!");
+  console.info("Happy!");
   navigator.notification.vibrate(200);
 }
 
