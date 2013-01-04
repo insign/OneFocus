@@ -75,7 +75,7 @@ body {
   tap-highlight-color: rgba(0,0,0,0);
 }
 
-.btn_central {
+.spin {
   display: inline-block;
 
   -webkit-animation: spin 4s infinite linear;

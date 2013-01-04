@@ -3,7 +3,7 @@
 # Copy to me (once): Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 
 $git_path = "$env:LOCALAPPDATA\GitHub\PortableGit_93e8418133eb85e81a81e5e19c272776524496c6\cmd\git.exe"
-$project_folder  = "D:\Dropbox\Sites\onefocus"
+$project_folder  = "E:\Dropbox\Sites\onefocus"
 $url_after = "https://build.phonegap.com/apps/270320/push"
 
 $author = "Helio Oliveira"
@@ -18,7 +18,7 @@ $(Invoke-Expression "$git_path config --global user.email '$email'")
 $(Invoke-Expression "$git_path config --global user.name '$author'")
 
 
-# Ask about the commit message (too slow)
+# Ask about the commit message (too slow when use environment variables)
 #[System.Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic') | Out-Null
 #$commit_msg = [Environment]::GetEnvironmentVariable("last_commit_msg","User")
 #$commit_msg = [Microsoft.VisualBasic.Interaction]::InputBox("What's the news?", "Commit message", $commit_msg)
