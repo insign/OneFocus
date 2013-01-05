@@ -14,21 +14,21 @@ cordova_media = {
     if (mediaTimer == null) {
 	 mediaTimer = setInterval(function() {
 
-	   this.obj.getCurrentPosition(
+	   cordova_media.obj.getCurrentPosition(
 			 // success callback
 				    function(pos) {
 					 console.info('Posição', pos);
 					 if (pos > -1) {
 					   cordova_media.log_position(pos);
 					 }
-				    }.bind(this),
+				    },
 				    // error callback
 						  function(e) {
 						    console.log("Error getting pos=" + e);
 						    position("Error: " + e);
 						  }
 				    );
-				  }, 1000).bind(this);
+				  }, 1000);
 		  }
   },
   pause: function() {
