@@ -23,13 +23,17 @@ of_playlist = {
   list: {},
   use_one: function() { // Play a random song of the list or request a new list
     if (this.list.length > 0) {
+	 console.info('Existe pilhas na playlist', this.list);
 	 var random_item = Math.floor(Math.random() * this.list.length);
 
 	 // Select a random item
+	 console.info('Pre-tocando');
 	 of_player.play(this.list[random_item]);
+	 console.info('Pos-tocando');
 
 	 // Remove the song used to play
 	 this.list.splice($.inArray(random_item, this.list), 1);
+	 console.info('Removido da playlist', this.list);
     }
     else {
 	 this.request();
