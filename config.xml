@@ -14,7 +14,7 @@
     Sensy Software
   </author>
   <preference name="fullscreen" value="true" />
-  <preference name="exit-on-suspend" value="true" />
+  <preference name="exit-on-suspend" value="false" />
   <preference name="orientation" value="portrait" />
 
   <preference name="android-installLocation" value="auto" />

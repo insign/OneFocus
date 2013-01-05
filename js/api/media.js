@@ -21,7 +21,7 @@ cordova_media = {
 					 if (position > -1) {
 					   $('#audio_position').text(this.position(position + " sec"));
 					 }
-				    },
+				    }.bind(this),
 				    // error callback
 						  function(e) {
 						    console.log("Error getting pos=" + e);
