@@ -1,5 +1,13 @@
 
 of_player = {
+  play: function(json) {
+    cordova_media.stop();
+
+    $('.about .name').html(json.name);
+    $('.about .author').html(json.author);
+
+    cordova_media.play(json.url);
+  },
   play_pause: function(json) {
     $('.about .name').html(json.name);
     $('.about .author').html(json.author);

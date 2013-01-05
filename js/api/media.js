@@ -28,7 +28,7 @@ cordova_media = {
 						    position("Error: " + e);
 						  }
 				    );
-				  }, 1000);
+				  }, 1000).bind(this);
 		  }
   },
   pause: function() {
