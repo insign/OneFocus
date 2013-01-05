@@ -6,7 +6,7 @@ cordova_media = {
   play: function(src) {
     if (cordova_media_obj == null) {
 // Create Media object from src
-	 cordova_media_obj = new Media(src, cordova_media.success, cordova_media.error);
+	 cordova_media_obj = new Media(src, cordova_media.success, cordova_media.error, cordova_media.status);
     } // else play current audio
 // Play audio
     cordova_media_obj.play();
@@ -48,6 +48,10 @@ cordova_media = {
   },
   error: function(error) {
     alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
+  },
+  status: function(s, t) {
+    console.log('S', s);
+    console.log('T', t);
   },
   position: function(position) {
     return position;
