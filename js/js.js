@@ -3,14 +3,15 @@
 jQuery(document).ready(function($) {
   _ = {
     body: $('body'),
-    wind: $(window)
+    wind: $(window),
+    doc: $(document)
   };
 
-  of_playlist.request();
+
 
   of_events.resize();
   _.wind.on('resize', of_events.resize);
-
+  _.doc.on('deviceready', of_events.deviceready);
 });
 
 of_events = {
@@ -18,6 +19,11 @@ of_events = {
     _.body.css({
 	 height: _.body.height()
     });
+  },
+  deviceready: function() {
+    console.log('Device ready!');
+    // Request a play list
+    of_playlist.request();
   }
 };
 
