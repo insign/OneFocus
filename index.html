@@ -22,14 +22,14 @@
   <body>
     <h1 class="of_title">one focus</h1>
     <div class="btn_central_cont">
-	 <span class="btn btn_central" onclick="playAudio('http://upload.wikimedia.org/wikipedia/commons/4/4f/07_-_Vivaldi_Autumn_mvt_1_Allegro_-_John_Harrison_violin.ogg');"><i class="icon-play" title="Play"></i></span>
+	 <a class="btn btn_central" onclick="cordova_play_audio('http://upload.wikimedia.org/wikipedia/commons/4/4f/07_-_Vivaldi_Autumn_mvt_1_Allegro_-_John_Harrison_violin.ogg');"><i class="icon-play" title="Play"></i></a>
     </div>
     <div class="about">
 	 <div class="title">Four Seasons (Autumn)</div>
 	 <div class="author">Vivaldi</div>
     </div>
-    <a href="#" class="btn large" onclick="pauseAudio();">Pause</a>
-    <a href="#" class="btn large" onclick="stopAudio();">Stop</a>
+    <a href="#" class="btn large" onclick="cordova_pause_audio();">Pause</a>
+    <a href="#" class="btn large" onclick="cordova_stop_audio();">Stop</a>
     <p id="audio_position"></p>
 
     <div id="stn">

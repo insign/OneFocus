@@ -8,7 +8,7 @@ var mediaTimer = null;
 function cordova_play_audio(src) {
   if (cordova_media_obj == null) {
     // Create Media object from src
-    cordova_media_obj = new Media(src, onSuccess, onError);
+    cordova_media_obj = new Media(src, cordova_media_success, cordova_media_error);
   } // else play current audio
   // Play audio
   cordova_media_obj.play();
@@ -22,13 +22,13 @@ function cordova_play_audio(src) {
 				  function(position) {
 				    console.info('Posição', position);
 				    if (position > -1) {
-					 setAudioPosition((position) + " sec");
+					 cordova_set_audio_position((position) + " sec");
 				    }
 				  },
 				  // error callback
 						function(e) {
 						  console.log("Error getting pos=" + e);
-						  setAudioPosition("Error: " + e);
+						  cordova_set_audio_position("Error: " + e);
 						}
 				  );
 				}, 1000);
@@ -45,7 +45,7 @@ function cordova_pause_audio() {
 
 // Stop audio
 //
-function stopAudio() {
+function cordova_stop_audio() {
   if (cordova_media_obj) {
     cordova_media_obj.stop();
   }
@@ -55,19 +55,19 @@ function stopAudio() {
 
 // onSuccess Callback
 //
-function onSuccess() {
+function cordova_media_success() {
   console.log("playAudio():Audio Success");
 }
 
 // onError Callback
 //
-function onError(error) {
+function cordova_media_error(error) {
   alert('code: ' + error.code + '\n' +
 		'message: ' + error.message + '\n');
 }
 
 // Set audio position
 //
-function setAudioPosition(position) {
+function cordova_set_audio_position(position) {
   document.getElementById('audio_position').innerHTML = position;
 }
