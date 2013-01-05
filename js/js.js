@@ -7,11 +7,9 @@ jQuery(document).ready(function($) {
     doc: $(document)
   };
 
-  document.addEventListener("deviceready", of_events.deviceready, false);
-
   of_events.resize();
   _.wind.on('resize', of_events.resize);
-  _.doc.on('ondeviceready', of_events.deviceready);
+  _.doc.on('deviceready', of_events.deviceready);
 });
 
 of_events = {
