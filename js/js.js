@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
 
   of_events.resize();
   _.wind.on('resize', of_events.resize);
-  _.doc.on('deviceready', of_events.deviceready);
+  _.doc.on('ondeviceready', of_events.deviceready);
 });
 
 of_events = {
