@@ -25,7 +25,7 @@ of_playlist = {
 	 var random_item = Math.floor(Math.random() * this.list.length);
 
 	 // Select a random item
-	 of_player.play_pause(this.list[random_item]);
+	 of_player.play(this.list[random_item]);
 
 	 // Remove the song used to play
 	 this.list.splice($.inArray(random_item, this.list), 1);
