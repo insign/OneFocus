@@ -1,12 +1,18 @@
 
 of_player = {
   play: function(json) {
+    console.info('Pre-tocando');
     cordova_media.stop();
+
+    console.info('Passou pelo stop');
 
     $('.about .name').html(json.name);
     $('.about .author').html(json.author);
+    console.info('Passou pelo sobre');
 
     cordova_media.play(json.url);
+    console.info('Passou pelo play');
+
   },
   play_pause: function(json) {
     $('.about .name').html(json.name);
@@ -27,7 +33,6 @@ of_playlist = {
 	 var random_item = Math.floor(Math.random() * this.list.length);
 
 	 // Select a random item
-	 console.info('Pre-tocando');
 	 of_player.play(this.list[random_item]);
 	 console.info('Pos-tocando');
 
