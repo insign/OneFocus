@@ -16,10 +16,10 @@ cordova_media = {
 // get my_media position
 	   cordova_media_obj.getCurrentPosition(
 			 // success callback
-				    function(position) {
-					 console.info('Posição', position);
-					 if (position > -1) {
-					   $('#audio_position').text(this.position(position + " sec"));
+				    function(pos) {
+					 console.info('Posição', pos);
+					 if (pos > -1) {
+					   $('#audio_position').text(this.position(pos + " sec"));
 					 }
 				    }.bind(this),
 				    // error callback
