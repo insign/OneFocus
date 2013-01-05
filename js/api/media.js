@@ -6,7 +6,7 @@ cordova_media = {
   play: function(src) {
     if (cordova_media_obj == null) {
 // Create Media object from src
-	 cordova_media_obj = new Media(src, cordova_media.success, cordova_media.error, cordova_media.status);
+	 cordova_media_obj = new Media(src, cordova_media.success, cordova_media.error);
     } // else play current audio
 // Play audio
     cordova_media_obj.play();
