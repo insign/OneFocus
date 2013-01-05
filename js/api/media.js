@@ -5,21 +5,21 @@ var mediaTimer = null;
 cordova_media = {
   play: function(src) {
     if (cordova_media_obj == null) {
-// Create Media object from src
-	 cordova_media_obj = new Media(src, cordova_media.success, cordova_media.error, cordova_media.status);
+	 // Create Media object from src
+	 cordova_media_obj = new Media(src, this.success, this.error, this.status);
     } // else play current audio
-// Play audio
+    // Play audio
     cordova_media_obj.play();
     // Update my_media position every second
     if (mediaTimer == null) {
 	 mediaTimer = setInterval(function() {
-// get my_media position
+
 	   cordova_media_obj.getCurrentPosition(
 			 // success callback
 				    function(pos) {
 					 console.info('Posição', pos);
 					 if (pos > -1) {
-					   $('#audio_position').text(this.position((pos) + " sec"));
+					   $('#audio_position').text(cordova_media.position((pos) + " sec"));
 					 }
 				    }.bind(this),
 				    // error callback
