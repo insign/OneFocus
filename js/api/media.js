@@ -19,7 +19,7 @@ cordova_media = {
 				    function(pos) {
 					 console.info('Posição', pos);
 					 if (pos > -1) {
-					   $('#audio_position').text(this.position(pos + " sec"));
+					   $('#audio_position').text(this.position((pos) + " sec"));
 					 }
 				    }.bind(this),
 				    // error callback
@@ -49,9 +49,8 @@ cordova_media = {
   error: function(error) {
     alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
   },
-  status: function(s, t) {
+  status: function(s) {
     console.log('S', s);
-    console.log('T', t);
   },
   position: function(position) {
     return position;
