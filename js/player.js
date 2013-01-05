@@ -15,6 +15,7 @@ of_player = {
     cordova_media.play(json.url);
   },
   next: function() {
+
   }
 };
 
