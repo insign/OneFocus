@@ -17,6 +17,11 @@ jQuery(document).ready(function($) {
   stu_vars();
 
   inicial_slider_os = $slider.offset();
+
+  $(window).on('resize', function() {
+    inicial_slider_os = $slider.offset();
+  });
+
   $slider.drags();
 });
 
