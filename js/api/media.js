@@ -19,7 +19,7 @@ cordova_media = {
 				    function(pos) {
 					 console.info('Posição', pos);
 					 if (pos > -1) {
-					   cordova_media.position(pos);
+					   cordova_media.log_position(pos);
 					 }
 				    }.bind(this),
 				    // error callback

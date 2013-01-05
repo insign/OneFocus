@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
     doc: $(document)
   };
 
-
+  document.addEventListener("deviceready", of_events.deviceready, false);
 
   of_events.resize();
   _.wind.on('resize', of_events.resize);
