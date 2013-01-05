@@ -1,25 +1,26 @@
 // Audio player
 //
-var my_media = null;
+var cordova_media_obj = null;
 var mediaTimer = null;
 
 // Play audio
 //
-function playAudio(src) {
-  if (my_media == null) {
+function cordova_play_audio(src) {
+  if (cordova_media_obj == null) {
     // Create Media object from src
-    my_media = new Media(src, onSuccess, onError);
+    cordova_media_obj = new Media(src, onSuccess, onError);
   } // else play current audio
   // Play audio
-  my_media.play();
+  cordova_media_obj.play();
 
   // Update my_media position every second
   if (mediaTimer == null) {
     mediaTimer = setInterval(function() {
 	 // get my_media position
-	 my_media.getCurrentPosition(
+	 cordova_media_obj.getCurrentPosition(
 		    // success callback
 				  function(position) {
+				    console.info('Posição', position);
 				    if (position > -1) {
 					 setAudioPosition((position) + " sec");
 				    }
@@ -36,17 +37,17 @@ function playAudio(src) {
 
 // Pause audio
 //
-function pauseAudio() {
-  if (my_media) {
-    my_media.pause();
+function cordova_pause_audio() {
+  if (cordova_media_obj) {
+    cordova_media_obj.pause();
   }
 }
 
 // Stop audio
 //
 function stopAudio() {
-  if (my_media) {
-    my_media.stop();
+  if (cordova_media_obj) {
+    cordova_media_obj.stop();
   }
   clearInterval(mediaTimer);
   mediaTimer = null;
