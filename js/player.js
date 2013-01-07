@@ -1,9 +1,6 @@
 
 of_player = {
   play: function(json) {
-    console.log('Stoping any music..');
-    cordova_media.stop();
-
     this.set_about(json);
 
     console.info('Sending URL to play now', json.url);
