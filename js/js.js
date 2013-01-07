@@ -55,6 +55,7 @@ of_ajax = {
   success: function(data) {
     console.log('AJAX received with success', data);
     $.each(data, function(i, j) {
+	 console.log('Each ' + i, j);
 	 switch (i) {
 	   case 'playlist':
 		console.log('Playlist received via AJAX', j);
@@ -62,5 +63,6 @@ of_ajax = {
 		break;
 	 }
     });
+    console.log('Fim do each');
   }
 };
