@@ -56,7 +56,6 @@ body {
 }
 
 
-.btn_central_cont:active,
 .btn_central_cont:hover {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -moz-tap-highlight-color: rgba(0,0,0,0);

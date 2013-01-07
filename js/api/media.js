@@ -17,8 +17,8 @@ cordova_media = {
 	   console.error('Impossible to create Cordova Media object:', err.message);
 	 }
     }
-    console.log('Trying to play the audio');
-    this.obj.play();
+    console.log('Trying to play the audio', this.obj.play());
+
     // Update my_media position every second
     if (mediaTimer == null) {
 	 mediaTimer = setInterval(function() {
