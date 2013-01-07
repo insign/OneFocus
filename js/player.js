@@ -10,8 +10,8 @@ of_player = {
     cordova_media.play(json.url);
 
   },
-  pause: function(json) {
-    cordova_media.play(json.url);
+  pause: function() {
+    cordova_media.pause();
   },
   next: function() {
 
