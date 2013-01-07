@@ -40,6 +40,7 @@ of_ajax = {
     var _default = {
 	 // @TODO Send cordava data
 	 url: 'test.json',
+	 dataType: 'json',
 	 cache: false,
 	 data: $.extend(_default_data, query_string),
 	 success: function(data) {
@@ -55,7 +56,6 @@ of_ajax = {
   success: function(data) {
     console.log('AJAX received with success', data);
     $.each(data, function(i, j) {
-	 console.log('Each ' + i, j);
 	 switch (i) {
 	   case 'playlist':
 		console.log('Playlist received via AJAX', j);
