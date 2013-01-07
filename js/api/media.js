@@ -6,7 +6,7 @@ cordova_media = {
   obj: null,
   status_code: 0,
   play: function(src) {
-    if (!this.obj || last_src != src) { // no object or new song
+    if (src && (!this.obj || last_src != src)) { // no object or new song
 	 try {
 	   this.stop();
 	   this.obj = new Media(src, this.success, this.error, this.status);
