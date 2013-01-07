@@ -2,7 +2,6 @@
     Document   : css
     Created on : 28/12/2012, 16:24:29
     Author     : Hélio <insign@gmail.com>
-    Description:
 */
 
 
@@ -26,7 +25,7 @@ body {
   font-weight: normal;
 }
 
-.btn_central_cont .btn_central {
+.btn_central_cont {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 
   margin:3em 0;
@@ -55,10 +54,25 @@ body {
   -ms-border-radius: 50em;
   border-radius: 50em;
 }
+
+
+.btn_central_cont:active,
+.btn_central_cont:focus,
+.btn_central_cont:hover {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -moz-tap-highlight-color: rgba(0,0,0,0);
+  -o-tap-highlight-color: rgba(0,0,0,0);
+  -ms-tap-highlight-color: rgba(0,0,0,0);
+  tap-highlight-color: rgba(0,0,0,0);
+}
+
 .btn_central_cont i {
   font-size: 8em;
   color: #fff;
   opacity: 1;
+}
+.btn_central_cont i:hover {
+  color: #222;
 }
 .btn_central_cont .icon-play:before {
   position: relative;
@@ -66,13 +80,33 @@ body {
   top:.04em;
 }
 
-.btn:active {
-  background: #B8B8B8 !important;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -moz-tap-highlight-color: rgba(0,0,0,0);
-  -o-tap-highlight-color: rgba(0,0,0,0);
-  -ms-tap-highlight-color: rgba(0,0,0,0);
-  tap-highlight-color: rgba(0,0,0,0);
+.btn_central_cont .icon-pause {
+  font-size: 6.5em;
+  position: relative;
+  top:.2em;
+}
+.btn_central_cont .icon-wait {
+}
+.btn_central_cont .btn_wait {
+  font-size: .8em;
+  position: relative;
+  left: -.1em;
+  top: 1.4em;
+}
+
+.btn_central_cont .btn,
+.playing .btn_central_cont .btn_play,
+.stopped .btn_central_cont .btn_play,
+.waiting .btn_central_cont .btn_play
+{
+  display: none;
+}
+.playing .btn_central_cont .btn_pause,
+.paused .btn_central_cont .btn_play,
+.waiting .btn_central_cont .btn_wait,
+.stopped .btn_central_cont .btn_play
+{
+  display: inline-block;
 }
 
 .spin {

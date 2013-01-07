@@ -3,54 +3,63 @@
 var mediaTimer = null;
 cordova_media = {
   obj: null,
+  status_code: 0,
   play: function(src) {
     if (this.obj == null) {
-	 // Create Media object from src
-	 this.obj = new Media(src, this.success, this.error, this.status);
-    } // else play current audio
-    // Play audio
+	 try {
+	   this.obj = new Media(src, this.success, this.error, this.status);
+	   console.log('Created a new Media object to play', this.obj);
+	 }
+	 catch (err) {
+	   console.error('Impossible to create Cordova Media object:', err.message);
+	 }
+    }
+    console.log('Trying to play the audio');
     this.obj.play();
     // Update my_media position every second
     if (mediaTimer == null) {
 	 mediaTimer = setInterval(function() {
-
+	   console.log('Activating the timer');
 	   cordova_media.obj.getCurrentPosition(
-			 // success callback
-				    function(pos) {
-					 console.info('Posição', pos);
-					 if (pos > -1) {
-					   cordova_media.log_position(pos);
-					 }
-				    },
-				    // error callback
-						  function(e) {
-						    console.log("Error getting pos=" + e);
-						    position("Error: " + e);
-						  }
-				    );
-				  }, 1000);
-		  }
+			 function(pos) {
+			   console.info('Playing', pos);
+			   if (pos > -1) {
+				cordova_media.log_position(pos);
+			   }
+			 },
+			 function(e) {
+			   console.error("Error getting pos=" + e);
+			 }
+	   );
+	 }, 1000);
+    }
   },
   pause: function() {
     if (this.obj) {
 	 this.obj.pause();
+	 console.log('Audio paused');
+    }
+    else {
+	 console.warn('Pause is not possible without audio object');
     }
   },
   stop: function() {
     if (this.obj) {
 	 this.obj.stop();
+	 console.log('Audio stopped');
     }
     clearInterval(mediaTimer);
     mediaTimer = null;
   },
   success: function() {
-    console.log("Cordova Audio played with success");
+    console.log("Audio played with success");
   },
   error: function(error) {
-    alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
+    console.error('Trying to play but error', error);
   },
   status: function(s) {
-    console.log('S', s);
+    console.log('Cordova Media Status', s);
+    of_player.set_status(s);
   },
   position: function(pos) {
     return pos;

@@ -9,6 +9,8 @@ jQuery(document).ready(function($) {
 
   of_events.resize();
   _.wind.on('resize', of_events.resize);
+
+  of_events.deviceready();
   _.doc.on('deviceready', of_events.deviceready);
 });
 
@@ -19,13 +21,18 @@ of_events = {
     });
   },
   deviceready: function() {
-    console.log('Device ready!');
+    try {
+	 is_cordova = device;
+	 console.log('Device ready!');
+    } catch (err) {
+	 is_cordova = false;
+	 console.log('Web ready!');
+    }
+
     // Request a play list
     of_playlist.request();
   }
 };
-
-
 
 of_ajax = {
   get: function(json, query_string) {
@@ -46,9 +53,11 @@ of_ajax = {
     $.ajax(settings);
   },
   success: function(data) {
+    console.log('AJAX received with success', data);
     $.each(data, function(i, j) {
 	 switch (i) {
 	   case 'playlist':
+		console.log('Playlist received via AJAX', j);
 		of_playlist.register(j);
 		break;
 	 }
