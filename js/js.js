@@ -1,4 +1,5 @@
 // @TODO Cordava ondeviceready & cordova_in_use
+in_cordova = false;
 
 jQuery(document).ready(function($) {
   _ = {
@@ -22,10 +23,9 @@ of_events = {
   },
   deviceready: function() {
     try {
-	 is_cordova = device;
+	 in_cordova = device;
 	 console.log('Device ready!');
     } catch (err) {
-	 is_cordova = false;
 	 console.log('Web ready!');
     }
 

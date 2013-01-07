@@ -34,6 +34,9 @@ of_player = {
 	   break;
 	 default:
 	   this.set_status_class('stopped');
+	   console.log('Song stopped, trying to play next song');
+	   of_playlist.use_one();
+
 	   break;
     }
   },

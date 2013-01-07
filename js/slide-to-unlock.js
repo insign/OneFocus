@@ -109,8 +109,11 @@ function swipe_event(step) {
 }
 
 function go_happy() {
-  console.info("Happy!");
-  navigator.notification.vibrate(200);
+  console.info("Happy swipe!");
+  if (in_cordova) {
+    navigator.notification.vibrate(200);
+  }
+  of_playlist.use_one();
 }
 
 function stu_touch_way() {

@@ -19,7 +19,6 @@ cordova_media = {
     // Update my_media position every second
     if (mediaTimer == null) {
 	 mediaTimer = setInterval(function() {
-	   console.log('Activating the timer');
 	   cordova_media.obj.getCurrentPosition(
 			 function(pos) {
 			   console.info('Playing', pos);
