@@ -1,14 +1,17 @@
 // Audio player
 //
-var mediaTimer = null;
+mediaTimer = null;
+last_src = null
 cordova_media = {
   obj: null,
   status_code: 0,
   play: function(src) {
-    if (this.obj == null) {
+    if (!this.obj || last_src != src) { // no object or new song
 	 try {
+	   this.stop();
 	   this.obj = new Media(src, this.success, this.error, this.status);
 	   console.log('Created a new Media object to play', this.obj);
+	   last_src = src;
 	 }
 	 catch (err) {
 	   console.error('Impossible to create Cordova Media object:', err.message);
@@ -35,8 +38,7 @@ cordova_media = {
   },
   pause: function() {
     if (this.obj) {
-	 this.obj.pause();
-	 console.log('Audio paused');
+	 console.log('Audio paused', this.obj.pause());
     }
     else {
 	 console.warn('Pause is not possible without audio object');
@@ -44,8 +46,8 @@ cordova_media = {
   },
   stop: function() {
     if (this.obj) {
-	 this.obj.stop();
-	 console.log('Audio stopped');
+	 console.log('Audio stopped', this.obj.stop());
+	 console.log('Audio released', this.obj.release());
     }
     clearInterval(mediaTimer);
     mediaTimer = null;
