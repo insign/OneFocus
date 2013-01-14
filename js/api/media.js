@@ -8,7 +8,6 @@ cordova_media = {
   play: function(src) {
     if (src && (!this.obj || last_src != src)) { // no object or new song
 	 try {
-	   this.stop();
 	   this.obj = new Media(src, this.success, this.error, this.status);
 	   console.log('Created a new Media object to play', this.obj);
 	   last_src = src;
