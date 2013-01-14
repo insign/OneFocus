@@ -52,15 +52,17 @@ of_playlist = {
   use_one: function() { // Play a random song of the list or request a new list
     if (this.list.length > 1) {
 	 console.info('use_one() - Exist items at playlist', this.list);
-	 var random_item = Math.floor(Math.random() * this.list.length);
+	 var random_index = Math.floor(Math.random() * this.list.length);
+	 var random_item = this.list[random_index];
 
-	 // Select a random item
-	 console.log('Selected random item of playlist to play', this.list[random_item]);
-	 of_player.play(this.list[random_item]);
 
 	 // Remove the song used to play
-	 console.info('Removing the item used to play', this.list);
-	 this.list.splice($.inArray(random_item, this.list), 1);
+	 this.list.splice($.inArray(random_index, this.list), 1);
+	 console.info('Removed the item used to play', this.list);
+
+	 // Select a random item
+	 console.log('Selected random item of playlist to play', random_item);
+	 of_player.play(random_item);
     }
     else {
 	 console.log('No items at playlist, request a new playlist...');
