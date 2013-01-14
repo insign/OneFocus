@@ -50,7 +50,7 @@ of_player = {
 of_playlist = {
   list: {},
   use_one: function() { // Play a random song of the list or request a new list
-    if (this.list.length > 0) {
+    if (this.list.length > 1) {
 	 console.info('use_one() - Exist items at playlist', this.list);
 	 var random_item = Math.floor(Math.random() * this.list.length);
 

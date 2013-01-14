@@ -12,6 +12,21 @@
 	 "name" : "Piano quartet Gmin",
 	 "author" : "Brahms",
 	 "url" : "http://upload.wikimedia.org/wikipedia/commons/e/e0/Brahms_-_Piano_quartet_Gmin_-_4._Presto%2C_Rondo_alla_Zingarese.ogg"
+    },
+    {
+	 "name" : "SWINTI",
+	 "author" : "Vivaldi",
+	 "url" : "http://upload.wikimedia.org/wikipedia/commons/c/cb/SWINTI-Vivaldi_Andante.ogg"
+    },
+    {
+	 "name" : "Fur Elise",
+	 "author" : "Beethoven",
+	 "url" : "http://upload.wikimedia.org/wikipedia/commons/7/7b/FurElise.ogg"
+    },
+    {
+	 "name" : "Bassoon Pieces",
+	 "author" : "Carl Almenräder",
+	 "url" : "http://upload.wikimedia.org/wikipedia/commons/5/50/Carl_Almenr%C3%A4der_-_Bassoon_Pieces.ogg"
     }
   ]
 }
