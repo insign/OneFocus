@@ -13,6 +13,7 @@
   <author href="http://sensy.me" email="contact@sensy.me">
     Sensy Software
   </author>
+  <preference name="phonegap-version" value="2.3.0" />
   <preference name="fullscreen" value="true" />
   <preference name="exit-on-suspend" value="false" />
   <preference name="orientation" value="portrait" />
