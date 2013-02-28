@@ -4,6 +4,8 @@ of_player = {
     if (json) {
 	 this.set_about(json);
 
+	 cordova_media.stop();
+
 	 console.info('Sending URL to play now', json.url);
 	 cordova_media.play(json.url);
     } else {
@@ -36,7 +38,6 @@ of_player = {
 	   this.set_status_class('stopped');
 	   console.log('Song stopped, trying to play next song');
 	   of_playlist.use_one();
-
 	   break;
     }
   },
