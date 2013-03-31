@@ -65,7 +65,7 @@ body {
 }
 
 .btn_central_cont i {
-  font-size: 8em;
+  font-size: 7em;
   color: #fff;
   opacity: 1;
 }
@@ -74,14 +74,14 @@ body {
 }
 .btn_central_cont .icon-play:before {
   position: relative;
-  left:-.04em;;
-  top:.04em;
+  left: .05em;
+  top: .11em;
 }
 
 .btn_central_cont .icon-pause {
-  font-size: 6.5em;
+  font-size: 6em;
   position: relative;
-  top:.2em;
+  top:.25em;
 }
 .btn_central_cont .icon-wait {
 }
