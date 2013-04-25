@@ -16,7 +16,7 @@ of_player = {
     cordova_media.pause();
   },
   next: function() {
-
+    of_playlist.use_one();
   },
   set_about: function(json) {
     console.log('Setting the text of author', json);
@@ -37,7 +37,7 @@ of_player = {
 	 default:
 	   this.set_status_class('stopped');
 	   console.log('Song stopped, trying to play next song');
-	   of_playlist.use_one();
+	   of_player.next();
 	   break;
     }
   },
@@ -57,17 +57,17 @@ of_playlist = {
 	 var random_item = this.list[random_index];
 
 
+   // Select a random item
+   console.log('Selected random item of playlist to play', random_item);
+   of_player.play(random_item);
+
 	 // Remove the song used to play
 	 this.list.splice($.inArray(random_index, this.list), 1);
 	 console.info('Removed the item used to play', this.list);
-
-	 // Select a random item
-	 console.log('Selected random item of playlist to play', random_item);
-	 of_player.play(random_item);
     }
     else {
-	 console.log('No items at playlist, request a new playlist...');
-	 this.request();
+  	 console.log('No items at playlist, request a new playlist...');
+  	 this.request();
     }
   },
   register: function(json) { // Register the new list then play a new one

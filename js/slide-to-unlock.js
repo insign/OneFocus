@@ -113,7 +113,7 @@ function go_happy() {
   if (in_cordova) {
     navigator.notification.vibrate(200);
   }
-  of_playlist.use_one();
+  of_player.next();
 }
 
 function stu_touch_way() {

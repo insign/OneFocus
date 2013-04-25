@@ -3,6 +3,14 @@
 	{
 		"selected_items":
 		[
+			[
+				"use",
+				"use_one"
+			],
+			[
+				"of",
+				"of_playlist"
+			]
 		]
 	},
 	"buffers":
@@ -19,7 +27,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 282,
+				"buffer_size": 281,
 				"line_ending": "Windows"
 			}
 		},
@@ -46,25 +54,85 @@
 				"buffer_size": 1359,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "js/player.js",
+			"settings":
+			{
+				"buffer_size": 2184,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/helio/AppData/Roaming/Sublime Text 2/Packages/CodeFormatter/README.md",
+			"settings":
+			{
+				"buffer_size": 10593,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/helio/AppData/Roaming/Sublime Text 2/Packages/CodeFormatter/CodeFormatter.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 6744,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/slide-to-unlock.js",
+			"settings":
+			{
+				"buffer_size": 3515,
+				"line_ending": "Windows"
+			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 104.0,
 		"selected_items":
 		[
+			[
+				"form",
+				"Format Code"
+			],
+			[
+				"for",
+				"Format Code"
+			],
+			[
+				"forma",
+				"Format Code"
+			],
 			[
 				"ins",
 				"Package Control: Install Package"
 			],
 			[
-				"select",
-				"ColorSchemeSelector: Random Color Scheme"
-			],
-			[
 				"remove",
 				"Package Control: Remove Package"
+			],
+			[
+				"lint",
+				"JSLint: Run JSLint"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"git",
+				"Gitignore: New gitingore"
+			],
+			[
+				"git che",
+				"Git: Change Branch"
+			],
+			[
+				"select",
+				"ColorSchemeSelector: Random Color Scheme"
 			],
 			[
 				"Package Control: ",
@@ -91,7 +159,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 512.0
+		"width": 464.0
 	},
 	"console":
 	{
@@ -108,6 +176,10 @@
 	},
 	"file_history":
 	[
+		"/C/Users/helio/AppData/Roaming/Sublime Text 2/Packages/User/Markdown.sublime-settings",
+		"/C/Users/helio/AppData/Roaming/Sublime Text 2/Packages/JSLint/README.md",
+		"/E/Dropbox/Sites/onefocus/.gitignore",
+		"/C/Users/helio/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/E/Dropbox/Sites/onefocus/pc.html",
 		"/C/Users/helio/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/helio/AppData/Roaming/Sublime Text 2/Packages/Emmet/Default (Windows).sublime-keymap",
@@ -115,7 +187,6 @@
 		"/E/Dropbox/Sites/onefocus/index.html",
 		"/C/Users/helio/AppData/Roaming/Sublime Text 2/Packages/BracketHighlighter/bh_core.sublime-settings",
 		"/C/Users/helio/AppData/Roaming/Sublime Text 2/Packages/BracketHighlighter/Example.sublime-keymap",
-		"/C/Users/helio/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/helio/AppData/Roaming/Sublime Text 2/Packages/ColorSchemeSelector/README.md",
 		"/C/Users/helio/AppData/Roaming/Sublime Text 2/Packages/ColorSchemeSelector/Default.sublime-commands",
 		"/E/wamp/www/TODO-LIST/composer.json",
@@ -169,7 +240,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -249,15 +320,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 282,
+						"buffer_size": 281,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								217,
-								217
+								281,
+								281
 							]
 						],
 						"settings":
@@ -328,8 +399,8 @@
 						"selection":
 						[
 							[
-								835,
-								835
+								1605,
+								1605
 							]
 						],
 						"settings":
@@ -455,7 +526,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 108.0,
+						"translation.y": 120.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -472,8 +543,8 @@
 						"selection":
 						[
 							[
-								307,
-								307
+								134,
+								134
 							]
 						],
 						"settings":
@@ -531,6 +602,292 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/player.js",
+					"settings":
+					{
+						"buffer_size": 2184,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								227,
+								227
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/helio/AppData/Roaming/Sublime Text 2/Packages/CodeFormatter/README.md",
+					"settings":
+					{
+						"buffer_size": 10593,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5548,
+								5548
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1680.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/helio/AppData/Roaming/Sublime Text 2/Packages/CodeFormatter/CodeFormatter.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 6744,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "js/slide-to-unlock.js",
+					"settings":
+					{
+						"buffer_size": 3515,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2613,
+								2613
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1865.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
 			]
 		}
@@ -566,6 +923,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.jslint_result_view":
+	{
+		"height": 130.0
+	},
 	"replace":
 	{
 		"height": 0.0
@@ -576,6 +937,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"slide",
+				"js/slide-to-unlock.js"
+			],
+			[
+				"play",
+				"js/player.js"
+			],
 			[
 				"js",
 				"js/js.js"
