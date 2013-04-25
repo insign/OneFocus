@@ -1,4 +1,12 @@
 #################
+## sublime text
+#################
+
+/*.sublime-project
+*.sublime-workspace
+sftp-config*.json
+
+#################
 ## NetBeans
 #################
 
