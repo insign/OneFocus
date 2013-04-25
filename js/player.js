@@ -2,18 +2,23 @@
 of_player = {
   play: function(json) {
     if (json) {
-	 this.set_about(json);
 
-	 cordova_media.stop();
+    this.stop()
+
+   this.set_about(json);
 
 	 console.info('Sending URL to play now', json.url);
 	 cordova_media.play(json.url);
-    } else {
+    }
+    else {
 	 cordova_media.play();
     }
   },
   pause: function() {
     cordova_media.pause();
+  },
+  pause: function() {
+    cordova_media.stop();
   },
   next: function() {
     of_playlist.use_one();
