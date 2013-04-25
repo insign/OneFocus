@@ -17,7 +17,7 @@ of_player = {
   pause: function() {
     cordova_media.pause();
   },
-  pause: function() {
+  stop: function() {
     cordova_media.stop();
   },
   next: function() {
