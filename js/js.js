@@ -13,6 +13,8 @@ jQuery(document).ready(function($) {
 
   of_events.deviceready();
   _.doc.on('deviceready', of_events.deviceready);
+
+  $('.debug').text(document.URL);
 });
 
 of_events = {

@@ -1,32 +1,32 @@
 {
-  "meta" : {
-    "version" : 1
+  "meta": {
+    "version": 1
   },
-  "playlist" : [
+  "playlist": [
     {
-	 "name" : "Autumn mvt 1 Allegro",
-	 "author" : "Vivaldi",
-	 "url" : "http://upload.wikimedia.org/wikipedia/commons/4/4f/07_-_Vivaldi_Autumn_mvt_1_Allegro_-_John_Harrison_violin.ogg"
+      "name": "Autumn mvt 1 Allegro",
+      "author": "Vivaldi",
+      "url": "http://upload.wikimedia.org/wikipedia/commons/4/4f/07_-_Vivaldi_Autumn_mvt_1_Allegro_-_John_Harrison_violin.ogg"
     },
     {
-	 "name" : "Piano quartet Gmin",
-	 "author" : "Brahms",
-	 "url" : "http://upload.wikimedia.org/wikipedia/commons/e/e0/Brahms_-_Piano_quartet_Gmin_-_4._Presto%2C_Rondo_alla_Zingarese.ogg"
+      "name": "Piano quartet Gmin",
+      "author": "Brahms",
+      "url": "http://upload.wikimedia.org/wikipedia/commons/e/e0/Brahms_-_Piano_quartet_Gmin_-_4._Presto%2C_Rondo_alla_Zingarese.ogg"
     },
     {
-	 "name" : "SWINTI",
-	 "author" : "Vivaldi",
-	 "url" : "http://upload.wikimedia.org/wikipedia/commons/c/cb/SWINTI-Vivaldi_Andante.ogg"
+      "name": "SWINTI",
+      "author": "Vivaldi",
+      "url": "http://upload.wikimedia.org/wikipedia/commons/c/cb/SWINTI-Vivaldi_Andante.ogg"
     },
     {
-	 "name" : "Fur Elise",
-	 "author" : "Beethoven",
-	 "url" : "http://upload.wikimedia.org/wikipedia/commons/7/7b/FurElise.ogg"
+      "name": "Fur Elise",
+      "author": "Beethoven",
+      "url": "http://upload.wikimedia.org/wikipedia/commons/7/7b/FurElise.ogg"
     },
     {
-	 "name" : "Bassoon Pieces",
-	 "author" : "Carl Almenräder",
-	 "url" : "http://upload.wikimedia.org/wikipedia/commons/5/50/Carl_Almenr%C3%A4der_-_Bassoon_Pieces.ogg"
+      "name": "Bassoon Pieces",
+      "author": "Carl Almenräder",
+      "url": "http://upload.wikimedia.org/wikipedia/commons/5/50/Carl_Almenr%C3%A4der_-_Bassoon_Pieces.ogg"
     }
   ]
 }
