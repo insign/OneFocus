@@ -111,7 +111,7 @@ function swipe_event(step) {
 function go_happy() {
   console.info("Happy swipe!");
   if (in_cordova) {
-    navigator.notification.vibrate(200);
+    navigator.notification.vibrate(100);
   }
   of_player.next();
 }
