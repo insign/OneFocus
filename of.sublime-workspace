@@ -63,7 +63,7 @@
 			"file": "js/player.js",
 			"settings":
 			{
-				"buffer_size": 2241,
+				"buffer_size": 2231,
 				"line_ending": "Unix"
 			}
 		},
@@ -197,7 +197,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 96.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"<project>"
@@ -235,7 +235,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -538,8 +538,8 @@
 						"selection":
 						[
 							[
-								134,
-								134
+								905,
+								905
 							]
 						],
 						"settings":
@@ -593,7 +593,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -603,15 +603,15 @@
 					"file": "js/player.js",
 					"settings":
 					{
-						"buffer_size": 2241,
+						"buffer_size": 2231,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								195,
-								195
+								1073,
+								1073
 							]
 						],
 						"settings":
@@ -665,7 +665,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 840.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

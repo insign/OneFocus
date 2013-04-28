@@ -3,9 +3,9 @@ of_player = {
   play: function(json) {
     if (json) {
 
-    this.stop()
+	 this.stop();
 
-   this.set_about(json);
+	 this.set_about(json);
 
 	 console.info('Sending URL to play now', json.url);
 	 cordova_media.play(json.url);
@@ -62,17 +62,17 @@ of_playlist = {
 	 var random_item = this.list[random_index];
 
 
-   // Select a random item
-   console.log('Selected random item of playlist to play', random_item);
-   of_player.play(random_item);
+	 // Select a random item
+	 console.log('Selected random item of playlist to play', random_item);
+	 of_player.play(random_item);
 
 	 // Remove the song used to play
 	 this.list.splice($.inArray(random_index, this.list), 1);
 	 console.info('Removed the item used to play', this.list);
     }
     else {
-  	 console.log('No items at playlist, request a new playlist...');
-  	 this.request();
+	 console.log('No items at playlist, request a new playlist...');
+	 this.request();
     }
   },
   register: function(json) { // Register the new list then play a new one

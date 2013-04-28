@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>one focus</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <meta name="HandheldFriendly" content=true>
-    <link rel="shortcut icon" href="img/icon/android/xxdpi.png" type="image/png">
+    <head>
+        <meta charset="UTF-8" />
+        <title>one focus</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta name="HandheldFriendly" content=true>
+        <link rel="shortcut icon" href="img/icon/android/xxdpi.png" type="image/png">
 
-    <link type="text/css" rel="stylesheet" href="css/cssreset-min.css">
-    <link type="text/css" rel="stylesheet" href="css/fonts/fontello/css/icons.css">
-    <link type="text/css" rel="stylesheet" href="css/fonts/opensans/stylesheet.css">
-    <link type="text/css" rel="stylesheet" href="css/css.css">
-    <link type="text/css" rel="stylesheet" href="css/slide-to-unlock.css">
+        <link type="text/css" rel="stylesheet" href="css/cssreset-min.css">
+        <link type="text/css" rel="stylesheet" href="css/fonts/fontello/css/icons.css">
+        <link type="text/css" rel="stylesheet" href="css/fonts/opensans/stylesheet.css">
+        <link type="text/css" rel="stylesheet" href="css/css.css">
+        <link type="text/css" rel="stylesheet" href="css/slide-to-unlock.css">
 
-    <script src="phonegap.js"></script>
-    <script src="js/jquery.min.js"></script>
+        <script src="phonegap.js"></script>
+        <script src="js/jquery.min.js"></script>
 
-    <script src="js/api/media.js"></script>
-    <script src="js/player.js"></script>
+        <script src="js/api/media.js"></script>
+        <script src="js/player.js"></script>
 
-    <script src="js/slide-to-unlock.js"></script>
+        <script src="js/slide-to-unlock.js"></script>
 
-    <script src="js/js.js"></script>
-  </head>
-  <body class="paused">
-    <h1 class="of_title">one focus</h1>
-    <div class="btn_central_cont">
-	 <a href=# class="btn btn_play" onclick="of_player.play();"><i class="icon-play" title="Play"></i></a>
-	 <a href=# class="btn btn_pause" onclick="of_player.pause();"><i class="icon-pause" title="Pause"></i></a>
-	 <a href=# class="btn btn_wait spin"><i class="icon-wait" title="Loading"></i></a>
-	 <a href=# class="btn btn_error"><i class="icon-play" title="Error"></i></a>
-	 <a href=# class="btn btn_battery"><i class="icon-play" title="Low battery"></i></a>
-    </div>
-    <div class="about">
-	 <div class="name"></div>
-	 <div class="author"></div>
-    </div>
-    <a href="#" class="btn large" onclick="of_events.deviceready();">deviceready</a>
-    <p id="audio_position"></p>
+        <script src="js/js.js"></script>
+    </head>
+    <body class="paused">
+        <h1 class="of_title">one focus</h1>
+        <div class="btn_central_cont">
+            <a href=# class="btn btn_play" onclick="of_player.play();"><i class="icon-play" title="Play"></i></a>
+            <a href=# class="btn btn_pause" onclick="of_player.pause();"><i class="icon-pause" title="Pause"></i></a>
+            <a href=# class="btn btn_wait spin"><i class="icon-wait" title="Loading"></i></a>
+            <a href=# class="btn btn_error"><i class="icon-play" title="Error"></i></a>
+            <a href=# class="btn btn_battery"><i class="icon-play" title="Low battery"></i></a>
+        </div>
+        <div class="about">
+            <div class="name"></div>
+            <div class="author"></div>
+        </div>
+        <p id="audio_position"></p>
 
-    <div id="stn">
-	 <div class="well">
-	   <h2><strong class="slider"><i class="icon-next2"></i></strong> <span class="label">slide to next</span></h2>
+        <div id="stn">
+            <div class="well">
+                <h2><strong class="slider"><i class="icon-next2"></i></strong> <span class="label">slide to next</span></h2>
 
-	 </div>
+            </div>
 
-    </div>
-  </body>
+        </div>
+    </body>
 </html>
