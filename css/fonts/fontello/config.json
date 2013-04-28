@@ -1,5 +1,7 @@
 {
   "name": "icons",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
   "glyphs": [
     {
       "search": [
@@ -26,6 +28,19 @@
       "orig_css": "play",
       "orig_code": 59392,
       "src": "fontawesome"
+    },
+    {
+      "search": [
+        "forward",
+        "player"
+      ],
+      "code": 57491,
+      "uid": "86bf86dba2ca65051aa87794221fee1c",
+      "css": "forward",
+      "orig_css": "forward",
+      "orig_code": 57491,
+      "src": "elusive",
+      "from": 57491
     },
     {
       "search": [
