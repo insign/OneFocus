@@ -68,7 +68,6 @@ body {
 .btn_central_cont i {
     font-size: 7em;
     color: #fff;
-    opacity: 1;
 }
 .btn_central_cont i:active {
     color: #222;
@@ -89,8 +88,7 @@ body {
 .btn_central_cont .btn_wait {
     font-size: .8em;
     position: relative;
-    left: -.1em;
-    top: 1.4em;
+    top: 2em;
 }
 
 .btn_central_cont .btn,

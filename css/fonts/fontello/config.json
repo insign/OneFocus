@@ -31,16 +31,31 @@
     },
     {
       "search": [
-        "forward",
-        "player"
+        "attention",
+        "warning",
+        "alert"
       ],
-      "code": 57491,
-      "uid": "86bf86dba2ca65051aa87794221fee1c",
-      "css": "forward",
-      "orig_css": "forward",
-      "orig_code": 57491,
+      "code": 9888,
+      "from": 9888,
+      "uid": "c76b7947c957c9b78b11741173c8349b",
+      "css": "attention",
+      "orig_css": "attention",
+      "orig_code": 9888,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "settings",
+        "cog",
+        "gear"
+      ],
+      "code": 57609,
+      "uid": "6083c8aa5e3345476a24a28ac1afaa61",
+      "css": "settings",
+      "orig_css": "cog",
+      "orig_code": 57609,
       "src": "elusive",
-      "from": 57491
+      "from": 57609
     },
     {
       "search": [
@@ -50,10 +65,24 @@
       "code": 59234,
       "from": 59234,
       "uid": "7ea35a8fc7e676c78e99cab2d4bc8653",
-      "css": "next2",
+      "css": "next",
       "orig_css": "to-end-alt",
       "orig_code": 59234,
       "src": "fontawesome"
+    },
+    {
+      "search": [
+        "broadcast",
+        "wifi",
+        "signal"
+      ],
+      "code": 59248,
+      "from": 59248,
+      "uid": "e6t4yvmv401e9gpo2anslq4uqy2iz692",
+      "css": "signal",
+      "orig_css": "signal",
+      "orig_code": 59248,
+      "src": "modernpics"
     },
     {
       "search": [
@@ -73,6 +102,18 @@
       "orig_code": 59442,
       "src": "fontelico",
       "from": 59442
+    },
+    {
+      "search": [
+        "battery"
+      ],
+      "code": 128267,
+      "uid": "a51290161c48d96d7f2e2151a4cbcde1",
+      "css": "battery",
+      "orig_css": "battery",
+      "orig_code": 128267,
+      "src": "entypo",
+      "from": 128267
     }
   ]
 }
