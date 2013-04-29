@@ -26,6 +26,24 @@ body {
     font-weight: normal;
 }
 
+.btn_settings {
+    position: absolute;
+    top: .5em;
+    left: .3em;
+    opacity: .5;
+}
+
+.in_settings .btn_settings,
+.win_settings {
+    display: none;
+}
+
+.in_settings .win_settings {
+    display: block;
+    background: #fff;
+    height: 100%;
+}
+
 .btn_central_cont {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 
