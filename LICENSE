@@ -4,7 +4,8 @@ Automatize the PhoneGap build:
 1. Open the Git Shell
 2. Run the command: powershell.exe -file .\PATH_HERE\autobuild.ps1
 
-License: See LICENSE file
+This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/.
+
 
 Thanks:
 
