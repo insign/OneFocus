@@ -1,6 +1,7 @@
 // @TODO Cordava ondeviceready & cordova_in_use
 in_cordova = false;
 in_dev = true;
+of_version = 1;
 
 if (!in_dev) {
     _lol = function() {
@@ -40,16 +41,22 @@ of_events = {
 };
 of_ajax = {
     get: function(json, query_string) {
-        var _default_data = {api_version: 1, test: 'a'};
+        var _default_data = {app_version: of_version};
         var _default = {
 // @TODO Send cordava data
 // @TODO Error event
-            url: 'test.json',
+            url: 'http://of.sensy.me/api',
             dataType: 'json',
             cache: false,
             data: $.extend(_default_data, query_string),
             success: function(data) {
                 this.success(data);
+            }.bind(this),
+            beforeSend: function(data) {
+                this.beforeSend(data);
+            }.bind(this),
+            error: function(data) {
+                this.error(data);
             }.bind(this)
         };
         var settings = $.extend(_default, json);
@@ -66,6 +73,15 @@ of_ajax = {
             }
         });
         console.log('Fim do each');
+    },
+    beforeSend: function() {
+        console.info('Trigger - Before the send');
+        of_player.set_status(1); // waiting
+    },
+    error: function() {
+        console.error('Trigger - Error while trying get ajax, setting status to 500');
+        of_player.set_status(500); // error
+        // @TODO Wait, then try again
     }
 };
 of_settings = {
