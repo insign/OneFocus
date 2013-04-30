@@ -38,7 +38,7 @@
       "code": 9888,
       "from": 9888,
       "uid": "c76b7947c957c9b78b11741173c8349b",
-      "css": "attention",
+      "css": "error",
       "orig_css": "attention",
       "orig_code": 9888,
       "src": "fontawesome"
@@ -93,7 +93,7 @@
       "code": 59248,
       "from": 59248,
       "uid": "e6t4yvmv401e9gpo2anslq4uqy2iz692",
-      "css": "signal",
+      "css": "offline",
       "orig_css": "signal",
       "orig_code": 59248,
       "src": "modernpics"

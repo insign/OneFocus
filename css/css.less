@@ -63,11 +63,16 @@ body {
 
     z-index: 1;
 
+    text-align: left;
+
     h1 {
         font-size: 1.3em;
         margin: .5em 0;
     }
-    text-align: left;
+    .close {
+        float: right;
+        margin:.5em .5em 0 0 ;
+    }
 }
 .in_settings .win_settings {
     display: block;
@@ -100,44 +105,37 @@ body {
     border-radius: 50em;
 
     i {
-        font-size: 7em;
+        font-size: 6em;
         color: #fff;
         &:active {
             color: #222;
         }
     }
 
-    .icon-play {
-        position: relative;
-        left: .05em;
-        top: .11em;
+    .btn_play {
+        font-size: 1.1em;
+        left: 0.7em;
+        top: 1em;
     }
 
-    .icon-pause {
-        font-size: 6em;
-        position: relative;
-        top:.25em;
+    .btn_pause {
+        top:1.6em;
+        left:.1em;
     }
 
     .btn_wait {
-        font-size: .8em;
-        position: relative;
-        top: 2em;
+        font-size: 1em;
+        top: 1.4em;
     }
 
-    .btn_error {
-        font-size: .8em;
-        position: relative;
-        top: 2em;
+    .btn_error, .btn_offline, .btn_battery {
+        top: 1em;
     }
+
 
     .btn {
         .dn;
-    }
-    .playing &, .stopped &, .waiting & {
-        .btn_play {
-            .dn;
-        }
+        position: relative;
     }
 }
 
@@ -145,7 +143,9 @@ body {
 .paused .btn_central_cont .btn_play,
 .waiting .btn_central_cont .btn_wait,
 .stopped .btn_central_cont .btn_play,
-.error .btn_central_cont .btn_error
+.error .btn_central_cont .btn_error,
+.offline .btn_central_cont .btn_offline,
+.battery .btn_central_cont .btn_battery
 {
     .dib;
 }

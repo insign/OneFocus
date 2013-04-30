@@ -3,10 +3,10 @@
  
 .icon-pause:before { content: '\e801'; } /* '' */
 .icon-play:before { content: '\e800'; } /* '' */
-.icon-attention:before { content: '\26a0'; } /* '⚠' */
+.icon-error:before { content: '\26a0'; } /* '⚠' */
 .icon-close:before { content: '\2715'; } /* '✕' */
 .icon-settings:before { content: '\e109'; } /* '' */
 .icon-next:before { content: '\e762'; } /* '' */
-.icon-signal:before { content: '\e770'; } /* '' */
+.icon-offline:before { content: '\e770'; } /* '' */
 .icon-wait:before { content: '\e832'; } /* '' */
 .icon-battery:before { content: '🔋'; } /* '\1f50b' */

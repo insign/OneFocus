@@ -45,6 +45,7 @@ of_player = {
                 break;
             case 910: // Offline
                 this.set_status_class('offline');
+                break;
             case 920: // Low battery
                 this.set_status_class('battery');
                 break;
