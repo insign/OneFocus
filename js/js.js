@@ -74,13 +74,19 @@ of_ajax = {
         });
         console.log('Fim do each');
     },
-    beforeSend: function() {
+    beforeSend: function(xhr, opts) {
+        if (!navigator.onLine) {
+            console.error('Trigger - navigator is offline');
+            of_player.set_status(910);
+            xhr.abort();
+        }
+
         console.info('Trigger - Before the send');
         of_player.set_status(1); // waiting
     },
     error: function() {
         console.error('Trigger - Error while trying get ajax, setting status to 500');
-        of_player.set_status(500); // error
+        of_player.set_status(900); // error
         // @TODO Wait, then try again
     }
 };

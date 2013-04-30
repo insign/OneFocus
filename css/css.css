@@ -88,7 +88,7 @@ body {
 .btn_central_cont i:active {
   color: #222;
 }
-.btn_central_cont .icon-play:before {
+.btn_central_cont .icon-play {
   position: relative;
   left: .05em;
   top: .11em;

@@ -40,8 +40,13 @@ of_player = {
             case 3:
                 this.set_status_class('paused');
                 break;
-            case 500: // Error
+            case 900: // Error generic
                 this.set_status_class('error');
+                break;
+            case 910: // Offline
+                this.set_status_class('offline');
+            case 920: // Low battery
+                this.set_status_class('battery');
                 break;
             default:
                 this.set_status_class('stopped');
@@ -52,7 +57,7 @@ of_player = {
     },
     set_status_class: function(s) {
         $('body')
-                .removeClass('waiting playing paused stopped error')
+                .removeClass('waiting playing paused stopped error offline battery')
                 .addClass(s);
     }
 
