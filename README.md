@@ -11,8 +11,8 @@ License: See [LICENSE.md](LICENSE.md) file
 
 Thanks:
 
-http://fontello.com
-http://wiredin.loopinfinito.com.br
-http://www.softicons.com/free-icons/object-icons/ball-icon-by-miniartx/colored-ball-icon
-http://edward-lover4ever.deviantart.com/art/Aurora-163765930
-http://android-ui-utils.googlecode.com/hg/asset-studio/dist/icons-launcher.html
+http://fontello.com  
+http://wiredin.loopinfinito.com.br  
+http://www.softicons.com/free-icons/object-icons/ball-icon-by-miniartx/colored-ball-icon  
+http://edward-lover4ever.deviantart.com/art/Aurora-163765930  
+http://android-ui-utils.googlecode.com/hg/asset-studio/dist/icons-launcher.html  
