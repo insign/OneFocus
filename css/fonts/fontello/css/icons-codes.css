@@ -4,6 +4,7 @@
 .icon-pause:before { content: '\e801'; } /* '' */
 .icon-play:before { content: '\e800'; } /* '' */
 .icon-attention:before { content: '\26a0'; } /* '⚠' */
+.icon-close:before { content: '\2715'; } /* '✕' */
 .icon-settings:before { content: '\e109'; } /* '' */
 .icon-next:before { content: '\e762'; } /* '' */
 .icon-signal:before { content: '\e770'; } /* '' */

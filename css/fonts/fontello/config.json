@@ -45,6 +45,20 @@
     },
     {
       "search": [
+        "close",
+        "cancel",
+        "reject"
+      ],
+      "code": 10005,
+      "from": 10005,
+      "uid": "8da3ac534210aae9c0f0e13804c1df97",
+      "css": "close",
+      "orig_css": "cancel",
+      "orig_code": 10005,
+      "src": "websymbols"
+    },
+    {
+      "search": [
         "settings",
         "cog",
         "gear"
