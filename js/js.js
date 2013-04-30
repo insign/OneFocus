@@ -69,3 +69,9 @@ of_ajax = {
         console.log('Fim do each');
     }
 };
+
+of_settings = {
+    open: function() {
+        _.body.addClass('in_settings');
+    }
+};

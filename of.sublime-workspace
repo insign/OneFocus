@@ -23,7 +23,7 @@
 			"file": "test.json",
 			"settings":
 			{
-				"buffer_size": 963,
+				"buffer_size": 1451,
 				"line_ending": "Windows"
 			}
 		},
@@ -31,7 +31,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 281,
+				"buffer_size": 492,
 				"line_ending": "Windows"
 			}
 		},
@@ -39,7 +39,7 @@
 			"file": "main.html",
 			"settings":
 			{
-				"buffer_size": 1917,
+				"buffer_size": 2256,
 				"line_ending": "Windows"
 			}
 		},
@@ -47,7 +47,7 @@
 			"file": "css/css.css",
 			"settings":
 			{
-				"buffer_size": 2973,
+				"buffer_size": 2384,
 				"line_ending": "Windows"
 			}
 		},
@@ -55,8 +55,16 @@
 			"file": "js/js.js",
 			"settings":
 			{
-				"buffer_size": 1359,
+				"buffer_size": 1706,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/helio/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/2RI7YSP5/CA258HDS.dropsync",
+			"settings":
+			{
+				"buffer_size": 460800,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -71,7 +79,7 @@
 			"file": "js/slide-to-unlock.js",
 			"settings":
 			{
-				"buffer_size": 3515,
+				"buffer_size": 4095,
 				"line_ending": "Windows"
 			}
 		}
@@ -235,7 +243,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -243,15 +251,15 @@
 					"file": "test.json",
 					"settings":
 					{
-						"buffer_size": 963,
+						"buffer_size": 1451,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								963,
-								963
+								0,
+								0
 							]
 						],
 						"settings":
@@ -301,7 +309,7 @@
 								"bh_single_quote_close"
 							],
 							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -315,15 +323,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 281,
+						"buffer_size": 492,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								281,
-								281
+								0,
+								0
 							]
 						],
 						"settings":
@@ -387,15 +395,15 @@
 					"file": "main.html",
 					"settings":
 					{
-						"buffer_size": 1917,
+						"buffer_size": 2256,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1605,
-								1605
+								0,
+								0
 							]
 						],
 						"settings":
@@ -459,15 +467,15 @@
 					"file": "css/css.css",
 					"settings":
 					{
-						"buffer_size": 2973,
+						"buffer_size": 2384,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								316,
-								317
+								0,
+								0
 							]
 						],
 						"settings":
@@ -531,15 +539,15 @@
 					"file": "js/js.js",
 					"settings":
 					{
-						"buffer_size": 1359,
+						"buffer_size": 1706,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								905,
-								905
+								0,
+								0
 							]
 						],
 						"settings":
@@ -589,7 +597,7 @@
 								"bh_single_quote_close"
 							],
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -600,6 +608,76 @@
 				},
 				{
 					"buffer": 5,
+					"file": "/C/Users/helio/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/2RI7YSP5/CA258HDS.dropsync",
+					"settings":
+					{
+						"buffer_size": 460800,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 240129.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "js/player.js",
 					"settings":
 					{
@@ -671,19 +749,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "js/slide-to-unlock.js",
 					"settings":
 					{
-						"buffer_size": 3515,
+						"buffer_size": 4095,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1489,
-								1489
+								0,
+								0
 							]
 						],
 						"settings":
@@ -733,7 +811,7 @@
 								"bh_single_quote_close"
 							],
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
