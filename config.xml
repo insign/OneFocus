@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
-	   xmlns:gap = "http://phonegap.com/ns/1.0"
-	   id        = "me.sensy.onefocus"
-	   versionCode="1"
-	   version   = "1.0.0">
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "me.sensy.onefocus"
+        versionCode="1"
+        version   = "1.0.0">
 
-  <name>One Focus</name>
-  <description>
-    Help users to focus in only one work by once, playing non-vocal sounds.
-  </description>
+    <name>One Focus</name>
+    <description>
+        Help users to focus in only one work by once, playing non-vocal sounds.
+    </description>
 
-  <author href="http://sensy.me" email="contact@sensy.me">
-    Sensy Software
-  </author>
-  <preference name="fullscreen" value="true" />
-  <preference name="exit-on-suspend" value="true" />
-  <preference name="orientation" value="portrait" />
+    <author href="http://sensy.me" email="contact@sensy.me">
+        Sensy Software
+    </author>
 
-  <preference name="android-installLocation" value="auto" />
+    <preference name="fullscreen" value="true" />
+    <preference name="exit-on-suspend" value="true" />
+    <preference name="orientation" value="portrait" />
+    <preference name="android-installLocation" value="auto" />
 
-  <feature name="http://api.phonegap.com/1.0/battery"/>
-  <feature name="http://api.phonegap.com/1.0/camera"/>
-  <feature name="http://api.phonegap.com/1.0/contacts"/>
-  <feature name="http://api.phonegap.com/1.0/file"/>
-  <feature name="http://api.phonegap.com/1.0/geolocation"/>
-  <feature name="http://api.phonegap.com/1.0/media"/>
-  <feature name="http://api.phonegap.com/1.0/network"/>
-  <feature name="http://api.phonegap.com/1.0/notification"/>
+    <feature name="http://api.phonegap.com/1.0/battery"/>
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+    <feature name="http://api.phonegap.com/1.0/contacts"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
 
-  <icon src="img/high.png" />
-  <icon src="img/icon/android/mdpi.png"   gap:platform="android"    gap:density="mdpi" />
-  <icon src="img/icon/android/hdpi.png"   gap:platform="android"    gap:density="hdpi" />
-  <icon src="img/icon/android/xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
-  <icon src="img/icon/android/xxhdpi.png"  gap:platform="android"    gap:density="xxhdpi" />
+    <icon src="img/high.png" />
+    <icon src="img/icon/android/mdpi.png"   gap:platform="android"    gap:density="mdpi" />
+    <icon src="img/icon/android/hdpi.png"   gap:platform="android"    gap:density="hdpi" />
+    <icon src="img/icon/android/xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
+    <icon src="img/icon/android/xxhdpi.png"  gap:platform="android"    gap:density="xxhdpi" />
 
 </widget>
