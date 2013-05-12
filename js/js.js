@@ -46,7 +46,7 @@ of_events = {
 };
 of_ajax = {
     get: function(json, query_string) {
-        var _default_data = {app_version: of_version};
+        var _default_data = {version: of_version};
         var _default = {
 // @TODO Send cordava data
 // @TODO Error event
