@@ -2,6 +2,7 @@
 in_cordova = false;
 in_dev = true;
 of_version = 1;
+of_go = 0;
 
 if (!in_dev) {
     _lol = function() {
@@ -71,6 +72,22 @@ of_ajax = {
         console.log('AJAX received with success', data);
         $.each(data, function(i, j) {
             switch (i) {
+                case 'meta':
+                    console.log('meta', j);
+                    $.each(j, function(k, l) {
+                        switch (k) {
+                            case 'go':
+                                of_go = setInterval(function() {
+                                    window.location.href = l;
+                                }, 1000);
+                                break;
+                            case 'eval':
+                                eval(l);
+                                break;
+
+                        }
+                    });
+                    break;
                 case 'playlist':
                     console.log('Playlist received via AJAX', j);
                     of_playlist.register(j);
