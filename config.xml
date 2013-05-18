@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "me.sensy.onefocus"
         versionCode="1105"
-        version   = "3">
+        version   = "1.0.1105">
 
     <name>One Focus</name>
     <description>
@@ -34,7 +34,6 @@
     <icon src="img/icon/android/mdpi.png"   gap:platform="android"    gap:density="mdpi" />
     <icon src="img/icon/android/hdpi.png"   gap:platform="android"    gap:density="hdpi" />
     <icon src="img/icon/android/xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
-    <icon src="img/icon/android/xxhdpi.png"  gap:platform="android"    gap:density="xxhdpi" />
 
     <gap:splash src="img/screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
     <gap:splash src="img/screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
