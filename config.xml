@@ -2,8 +2,8 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "me.sensy.onefocus"
-        versionCode="1105"
-        version   = "1.0.1105">
+        versionCode="1122"
+        version   = "1.0.1122">
 
     <name>One Focus</name>
     <description>
@@ -30,16 +30,5 @@
     <feature name="http://api.phonegap.com/1.0/notification"/>
 
     <icon src="img/high.png" />
-    <icon src="img/icon/android/ldpi.png" gap:platform="android" gap:density="ldpi" />
-    <icon src="img/icon/android/mdpi.png"   gap:platform="android"    gap:density="mdpi" />
-    <icon src="img/icon/android/hdpi.png"   gap:platform="android"    gap:density="hdpi" />
-    <icon src="img/icon/android/xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
-
-    <gap:splash src="img/screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="img/screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="img/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
-    <gap:splash src="img/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
-
-    <access origin="*" />
 
 </widget>
