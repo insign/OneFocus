@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "me.sensy.onefocus"
         versionCode="1105"
-        version   = "1.0.5">
+        version   = "3">
 
     <name>One Focus</name>
     <description>
