@@ -2,8 +2,9 @@
 # Copy to me: .\autobuild.ps1
 # Copy to me (once): Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 
-$git_path = "$env:LOCALAPPDATA\GitHub\PortableGit_93e8418133eb85e81a81e5e19c272776524496c6\cmd\git.exe"
-$project_folder  = "E:\Dropbox\Sites\onefocus"
+$git_path = "$env:LOCALAPPDATA\GitHub\PortableGit_ca477551eeb4aea0e4ae9fcd3358bd96720bb5c8\cmd\git.exe"
+
+$project_folder  = "X:\Dropbox\Sites\onefocus"
 $url_after = "https://build.phonegap.com/apps/270320/push"
 
 $author = "Helio Oliveira"
@@ -13,6 +14,7 @@ $git_branch = "master"
 
 ################################################################################
 clear
+$git_path = (New-Object -ComObject Scripting.FileSystemObject).GetFile("$git_path").ShortPath
 
 $(Invoke-Expression "$git_path config --global user.email '$email'")
 $(Invoke-Expression "$git_path config --global user.name '$author'")
@@ -24,7 +26,7 @@ $(Invoke-Expression "$git_path config --global user.name '$author'")
 #$commit_msg = [Microsoft.VisualBasic.Interaction]::InputBox("What's the news?", "Commit message", $commit_msg)
 #[Environment]::SetEnvironmentVariable("last_commit_msg", $commit_msg, "User")
 
-$commit_msg = 'update for build test';
+$commit_msg = 'update';
 
 # Open the folder
 cd $project_folder

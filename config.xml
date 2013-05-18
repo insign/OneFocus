@@ -7,13 +7,14 @@
 
     <name>One Focus</name>
     <description>
-        Help users to focus in only one work by once, playing non-vocal sounds.
+        Focus on your work, isolating yourself from the world for a few moments
     </description>
 
     <author href="http://sensy.me" email="contact@sensy.me">
         Sensy Software
     </author>
 
+    <access origin="*" />
     <preference name="phonegap-version" value="2.5.0" />
     <preference name="fullscreen" value="true" />
     <preference name="exit-on-suspend" value="true" />
@@ -35,5 +36,10 @@
     <icon src="img/icon/android/hdpi.png"   gap:platform="android"    gap:density="hdpi" />
     <icon src="img/icon/android/xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
     <icon src="img/icon/android/xxhdpi.png"  gap:platform="android"    gap:density="xxhdpi" />
+
+    <gap:splash src="img/screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="img/screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="img/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="img/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
 
 </widget>
