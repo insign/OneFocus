@@ -14,7 +14,6 @@
         Sensy Software
     </author>
 
-    <access origin="*" />
     <preference name="phonegap-version" value="2.5.0" />
     <preference name="fullscreen" value="true" />
     <preference name="exit-on-suspend" value="true" />
@@ -41,5 +40,7 @@
     <gap:splash src="img/screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
     <gap:splash src="img/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
     <gap:splash src="img/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
+
+    <access origin="*" />
 
 </widget>

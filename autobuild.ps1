@@ -14,6 +14,8 @@ $git_branch = "master"
 
 ################################################################################
 clear
+
+#Short path to avoid errors
 $git_path = (New-Object -ComObject Scripting.FileSystemObject).GetFile("$git_path").ShortPath
 
 $(Invoke-Expression "$git_path config --global user.email '$email'")
