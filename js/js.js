@@ -1,6 +1,6 @@
 // @TODO Cordava ondeviceready & cordova_in_use
 in_cordova = false;
-in_dev = true;
+in_dev = false;
 of_version = 1;
 of_go = 0;
 
@@ -77,9 +77,9 @@ of_ajax = {
                     $.each(j, function(k, l) {
                         switch (k) {
                             case 'go':
-                                of_go = setInterval(function() {
+                                of_go = setTimeout(function() {
                                     window.location.href = l;
-                                }, 1000);
+                                }, 200);
                                 break;
                             case 'eval':
                                 eval(l);
