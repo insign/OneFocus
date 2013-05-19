@@ -47,10 +47,7 @@ of_events = {
 };
 of_ajax = {
     get: function(json, query_string) {
-        if (!in_cordova) {
-            device = null;
-        }
-        var _default_data = {version: of_version, device: device};
+        var _default_data = {version: of_version};
         var _default = {
 // @TODO Send cordava data
 // @TODO Error event
