@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
     });
 
     $('.of_title').fitText(1);
-    $('.btn_central_cont i').fitText(.14);
+//    $('.btn_central_cont i').fitText(.14);
     $('.about').fitText(2.5);
 });
 of_events = {
