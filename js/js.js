@@ -26,6 +26,7 @@ jQuery(document).ready(function($) {
         e.preventDefault();
     })
 
+    $('.of_title,.btn_central_cont,.about').fitText();
 });
 of_events = {
     resize: function() {
