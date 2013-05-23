@@ -26,9 +26,9 @@ jQuery(document).ready(function($) {
         e.preventDefault();
     });
 
-    $('.of_title').fitText(5);
+    $('.of_title').fitText(1);
     $('.btn_central_cont i').fitText(.14);
-    $('.about').fitText(8);
+    $('.about').fitText(2.5);
 });
 of_events = {
     resize: function() {
