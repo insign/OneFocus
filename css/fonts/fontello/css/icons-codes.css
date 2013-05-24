@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
  
+.icon-error:before { content: '\e802'; } /* '' */
 .icon-pause:before { content: '\e801'; } /* '' */
 .icon-play:before { content: '\e800'; } /* '' */
-.icon-error:before { content: '\26a0'; } /* '⚠' */
 .icon-close:before { content: '\2715'; } /* '✕' */
 .icon-settings:before { content: '\e109'; } /* '' */
 .icon-next:before { content: '\e762'; } /* '' */

@@ -4,130 +4,58 @@
   "css_use_suffix": false,
   "glyphs": [
     {
-      "search": [
-        "pause",
-        "player"
-      ],
-      "code": 59393,
-      "from": 9097,
-      "uid": "0b28050bac9d3facf2f0226db643ece0",
-      "css": "pause",
-      "orig_css": "pause",
-      "orig_code": 59393,
-      "src": "fontawesome"
+      "uid": "2a6740fc2f9d0edea54205963f662594",
+      "css": "wait",
+      "code": 59442,
+      "src": "fontelico"
     },
     {
-      "search": [
-        "play",
-        "player"
-      ],
-      "code": 59392,
-      "from": 9654,
+      "uid": "a51290161c48d96d7f2e2151a4cbcde1",
+      "css": "battery",
+      "code": 128267,
+      "src": "entypo"
+    },
+    {
       "uid": "ce06b5805120d0c2f8d60cd3f1a4fdb5",
       "css": "play",
-      "orig_css": "play",
-      "orig_code": 59392,
+      "code": 59392,
       "src": "fontawesome"
     },
     {
-      "search": [
-        "attention",
-        "warning",
-        "alert"
-      ],
-      "code": 9888,
-      "from": 9888,
-      "uid": "c76b7947c957c9b78b11741173c8349b",
-      "css": "error",
-      "orig_css": "attention",
-      "orig_code": 9888,
+      "uid": "0b28050bac9d3facf2f0226db643ece0",
+      "css": "pause",
+      "code": 59393,
       "src": "fontawesome"
     },
     {
-      "search": [
-        "close",
-        "cancel",
-        "reject"
-      ],
-      "code": 10005,
-      "from": 10005,
-      "uid": "8da3ac534210aae9c0f0e13804c1df97",
-      "css": "close",
-      "orig_css": "cancel",
-      "orig_code": 10005,
-      "src": "websymbols"
-    },
-    {
-      "search": [
-        "settings",
-        "cog",
-        "gear"
-      ],
-      "code": 57609,
-      "uid": "6083c8aa5e3345476a24a28ac1afaa61",
-      "css": "settings",
-      "orig_css": "cog",
-      "orig_code": 57609,
-      "src": "elusive",
-      "from": 57609
-    },
-    {
-      "search": [
-        "right",
-        "player"
-      ],
-      "code": 59234,
-      "from": 59234,
       "uid": "7ea35a8fc7e676c78e99cab2d4bc8653",
       "css": "next",
-      "orig_css": "to-end-alt",
-      "orig_code": 59234,
+      "code": 59234,
       "src": "fontawesome"
     },
     {
-      "search": [
-        "broadcast",
-        "wifi",
-        "signal"
-      ],
-      "code": 59248,
-      "from": 59248,
-      "uid": "e6t4yvmv401e9gpo2anslq4uqy2iz692",
-      "css": "offline",
-      "orig_css": "signal",
-      "orig_code": 59248,
+      "uid": "23d1c53bc15ca452df9453450e94a19c",
+      "css": "error",
+      "code": 59394,
       "src": "modernpics"
     },
     {
-      "search": [
-        "load",
-        "progress",
-        "wait"
-      ],
-      "code": 59442,
-      "meta": {
-        "email": "berbentseva_angela@yahoo.com",
-        "author": "Angela Berbentseva, specially for fontello"
-      },
-      "uid": "2a6740fc2f9d0edea54205963f662594",
-      "css-ext": "animate-spin",
-      "css": "wait",
-      "orig_css": "spin3",
-      "orig_code": 59442,
-      "src": "fontelico",
-      "from": 59442
+      "uid": "e6t4yvmv401e9gpo2anslq4uqy2iz692",
+      "css": "offline",
+      "code": 59248,
+      "src": "modernpics"
     },
     {
-      "search": [
-        "battery"
-      ],
-      "code": 128267,
-      "uid": "a51290161c48d96d7f2e2151a4cbcde1",
-      "css": "battery",
-      "orig_css": "battery",
-      "orig_code": 128267,
-      "src": "entypo",
-      "from": 128267
+      "uid": "6083c8aa5e3345476a24a28ac1afaa61",
+      "css": "settings",
+      "code": 57609,
+      "src": "elusive"
+    },
+    {
+      "uid": "8da3ac534210aae9c0f0e13804c1df97",
+      "css": "close",
+      "code": 10005,
+      "src": "websymbols"
     }
   ]
 }

@@ -1,6 +1,15 @@
 Font license info
 
 
+## Modern Pictograms
+
+   Copyright (c) 2012 by John Caserta. All rights reserved.
+
+   Author:    John Caserta
+   License:   SIL (http://scripts.sil.org/OFL)
+   Homepage:  http://thedesignoffice.org/project/modern-pictograms/
+
+
 ## Font Awesome
 
    Copyright (C) 2012 by Dave Gandy
@@ -28,15 +37,6 @@ Font license info
    Homepage:  http://aristeides.com/
 
 
-## Modern Pictograms
-
-   Copyright (c) 2012 by John Caserta. All rights reserved.
-
-   Author:    John Caserta
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://thedesignoffice.org/project/modern-pictograms/
-
-
 ## Fontelico
 
    Copyright (C) 2012 by Fontello project
@@ -51,7 +51,7 @@ Font license info
    Copyright (C) 2012 by Daniel Bruce
 
    Author:    Daniel Bruce
-   License:   SIL (http://scripts.sil.org/OFL)
+   License:   CC BY-SA (http://creativecommons.org/licenses/by-sa/2.0/)
    Homepage:  http://www.entypo.com
 
 
