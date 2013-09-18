@@ -14,7 +14,7 @@
         Sensy Software
     </author>
 
-    <preference name="phonegap-version" value="2.7.0" />
+    <preference name="phonegap-version" value="2.9.0" />
     <preference name="fullscreen" value="true" />
     <preference name="exit-on-suspend" value="true" />
     <preference name="orientation" value="portrait" />
