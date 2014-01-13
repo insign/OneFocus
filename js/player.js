@@ -21,8 +21,11 @@ of_player = {
     stop: function() {
         cordova_media.stop();
     },
-    next: function() {
+    next: function(vibrate) {
         of_playlist.use_one();
+        if (vibrate && in_cordova) { // Vibrar
+            navigator.notification.vibrate(100);
+        }
     },
     set_about: function(json) {
         console.log('Setting the text of author', json);
