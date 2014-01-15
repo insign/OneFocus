@@ -186,4 +186,42 @@ body {
 ._next {
     background: red;
     font-size: 3rem;
+
+    position: fixed;
+    right:-3px;
+}
+
+.btn1 {
+    * {
+        color: #050505;
+    }
+    padding: 10px 20px;
+    background: -moz-linear-gradient(
+        top,
+        #ffffff 0%,
+        #ebebeb 50%,
+        #dbdbdb 50%,
+        #b5b5b5);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#ffffff),
+        color-stop(0.50, #ebebeb),
+        color-stop(0.50, #dbdbdb),
+        to(#b5b5b5));
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 0px solid #949494;
+    -moz-box-shadow:
+        0px 1px 1px rgba(000,000,000,0.5),
+        inset 0px 0px 0px rgba(255,255,255,1);
+    -webkit-box-shadow:
+        0px 1px 1px rgba(000,000,000,0.5),
+        inset 0px 0px 0px rgba(255,255,255,1);
+    box-shadow:
+        0px 1px 1px rgba(000,000,000,0.5),
+        inset 0px 0px 0px rgba(255,255,255,1);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,0),
+        0px 1px 0px rgba(255,255,255,0);
 }
