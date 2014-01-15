@@ -2,9 +2,9 @@
 # Copy to me: .\autobuild.ps1
 # Copy to me (once): Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 
-$git_path = "$env:LOCALAPPDATA\GitHub\PortableGit_ca477551eeb4aea0e4ae9fcd3358bd96720bb5c8\cmd\git.exe"
+$git_path = "$env:LOCALAPPDATA\GitHub\PortableGit_fed20eba68b3e238e49a47cdfed0a45783d93651\cmd\git.exe"
 
-$project_folder  = "X:\Dropbox\Sites\onefocus"
+$project_folder  = "D:\Dropbox\Sites\onefocus"
 $url_after = "https://build.phonegap.com/apps/270320/push"
 
 $author = "Helio Oliveira"
