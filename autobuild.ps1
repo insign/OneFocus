@@ -1,6 +1,7 @@
 # Made by Helio <insign@gmail.com> to One Focus
-# Copy to me: .\autobuild.ps1
+# Copy to me: powershell.exe .\autobuild.ps1
 # Copy to me (once): Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+# Copy to me: commonly only need things to be changed is the $project_folder and "PortableGit" folder of $git_path
 
 $git_path = "$env:LOCALAPPDATA\GitHub\PortableGit_fed20eba68b3e238e49a47cdfed0a45783d93651\cmd\git.exe"
 
