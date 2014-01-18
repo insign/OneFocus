@@ -25,10 +25,6 @@ jQuery(document).ready(function($) {
     $('[href=#]').on('click', function(e) {
         e.preventDefault();
     });
-
-    $('.of_title').fitText(1);
-//    $('.btn_central_cont i').fitText(.14);
-    $('.about').fitText(2.5);
 });
 of_events = {
     resize: function() {
