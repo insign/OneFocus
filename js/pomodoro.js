@@ -52,7 +52,6 @@ var pomodoro = new (function() {
     }
 
     this.completed = function() {
-        var start_now = false;
         console.info('evento completado', currentEvent);
 
         if (currentEvent == 'pomo') {
@@ -101,6 +100,7 @@ var pomodoro = new (function() {
             // Back to pomo
             newTime = defaultTime;
             currentEvent = 'pomo';
+            start_now = false;
 
             // Alertando para voltar ao trabalho
             navigator.notification.vibrate(1000);
