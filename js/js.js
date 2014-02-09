@@ -21,6 +21,8 @@ jQuery(document).ready(function($) {
 
     of_events.deviceready();
     _.doc.on('deviceready', of_events.deviceready);
+    alert('fired device ready jquery ready');
+
 
     $('[href=#]').on('click', function(e) {
         e.preventDefault();
@@ -33,7 +35,7 @@ of_events = {
         });
     },
     deviceready: function() {
-        alert('fired device ready');
+        alert('fired device ready ofevents');
         try {
             in_cordova = device;
             console.log('Device ready!');
