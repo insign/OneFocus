@@ -18,7 +18,7 @@ var pomodoro = new (function() {
 
         // Setup the timer
         $countdown = $('._pomo');
-        pomodoro.Timer = $.timer(updateTimer, incrementTime, true);
+        pomodoro.Timer = $.timer(updateTimer, incrementTime, false);
 
         // Setup form
         $pomo = $('._pomo');
