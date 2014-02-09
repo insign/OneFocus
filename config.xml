@@ -2,8 +2,8 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "me.sensy.onefocus"
-        versionCode="1277"
-        version   = "1.1.1277">
+        versionCode="1313"
+        version   = "1.1.1313">
 
     <name>One Focus</name>
     <description>
@@ -14,11 +14,9 @@
         Sensy Software
     </author>
 
-    <gap:platform name="android" />
-
-    <preference name="phonegap-version" value="3.1.0" />
+    <preference name="phonegap-version" value="2.9.0" />
     <preference name="fullscreen" value="true" />
-    <preference name="exit-on-suspend" value="false" />
+    <preference name="exit-on-suspend" value="true" />
     <preference name="orientation" value="portrait" />
     <preference name="android-installLocation" value="auto" />
 
