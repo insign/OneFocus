@@ -52,6 +52,7 @@ var pomodoro = new (function() {
     }
 
     this.completed = function() {
+        var start_now = false;
         console.info('evento completado', currentEvent);
 
         if (currentEvent == 'pomo') {
@@ -66,6 +67,7 @@ var pomodoro = new (function() {
 
             currentEvent = 'shortbreak';
             newTime = shortBreak;
+            start_now = true;
 
             // Alertando para uma pausa curta
             of_player.pause();
@@ -82,6 +84,7 @@ var pomodoro = new (function() {
             // Long break
             currentEvent = 'longbreak';
             newTime = longBreak;
+            start_now = true;
 
             rounds = 0; // Clear rounds
 
@@ -110,7 +113,7 @@ var pomodoro = new (function() {
         console.info('entrando em', currentEvent);
         console.warn('rounds', rounds);
 
-        pomodoro.resetCountdown(newTime);
+        pomodoro.resetCountdown(newTime, start_now);
         return;
     }
 
