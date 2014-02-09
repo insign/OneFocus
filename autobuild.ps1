@@ -3,7 +3,7 @@
 # Copy to me (once): Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 # Copy to me: commonly only need things to be changed is the $project_folder and "PortableGit" folder of $git_path
 
-$git_path = "$env:LOCALAPPDATA\GitHub\PortableGit_fed20eba68b3e238e49a47cdfed0a45783d93651\cmd\git.exe"
+$git_path = "$env:LOCALAPPDATA\GitHub\PortableGit_054f2e797ebafd44a30203088cd3d58663c627ef\cmd\git.exe"
 
 $project_folder  = "D:\Dropbox\Sites\onefocus"
 $url_after = "https://build.phonegap.com/apps/270320/push"
