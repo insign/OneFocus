@@ -23,7 +23,12 @@ var pomodoro = new (function() {
         // Setup form
         $pomo = $('._pomo');
         $pomo.click(function(e) {
-            pomodoro.Timer.toggle();
+            if (!pomodoro.isActive) {
+                pomodoro.Timer.play();
+            }
+            else {
+                window.plugins.toast.showShortCenter('You can`t pause! Go work!');
+            }
             e.preventDefault();
         });
 
@@ -61,8 +66,12 @@ var pomodoro = new (function() {
             currentEvent = 'shortbreak';
             newTime = shortBreak;
 
-            navigator.notification.vibrate(300);
-            window.plugins.toast.showShortCenter('Go return calls, take breath or water')
+            navigator.notification.vibrate(700);
+            window.plugins.toast.showLongCenter('Go return calls, take breath or water')
+            //  @todo beep
+            // @todo stop sound
+            // @todo blink icons
+            // @todo copy code to the longbreak
         }
         else if (currentEvent == 'pomo') {
             // Long break
@@ -70,7 +79,7 @@ var pomodoro = new (function() {
             newTime = longBreak;
 
             rounds = 0; // Clear rounds
-            navigator.notification.vibrate(700);
+            navigator.notification.vibrate(1000);
         }
         else if (currentEvent == 'longbreak' || currentEvent == 'shortbreak') {
             // Back to pomo
