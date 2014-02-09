@@ -66,10 +66,10 @@ var pomodoro = new (function() {
             currentEvent = 'shortbreak';
             newTime = shortBreak;
 
+            of_player.pause();
             navigator.notification.vibrate(700);
-            window.plugins.toast.showLongCenter('Go return calls, take breath or water')
-            //  @todo beep
-            // @todo stop sound
+            window.plugins.toast.showLongCenter('Go return calls, take breath or water');
+            navigator.notification.beep(2);
             // @todo blink icons
             // @todo copy code to the longbreak
         }
