@@ -61,14 +61,7 @@ var pomodoro = new (function() {
             currentEvent = 'shortbreak';
             newTime = shortBreak;
 
-            navigator.notification.alert(
-                    'You are the winner!', // message
-                    function() {
-
-                    }, // callback
-                    'Game Over', // title
-                    'Done'                  // buttonName
-                    );
+            navigator.notification.vibrate(300);
         }
         else if (currentEvent == 'pomo') {
             // Long break
@@ -76,6 +69,7 @@ var pomodoro = new (function() {
             newTime = longBreak;
 
             rounds = 0; // Clear rounds
+            navigator.notification.vibrate(700);
         }
         else if (currentEvent == 'longbreak' || currentEvent == 'shortbreak') {
             // Back to pomo
