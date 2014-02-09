@@ -19,10 +19,7 @@ jQuery(document).ready(function($) {
     of_events.resize();
     _.wind.on('resize', of_events.resize);
 
-//    of_events.deviceready();
     _.doc.on('deviceready', of_events.deviceready);
-    alert('fired device ready jquery ready');
-
 
     $('[href=#]').on('click', function(e) {
         e.preventDefault();
