@@ -60,6 +60,15 @@ var pomodoro = new (function() {
 
             currentEvent = 'shortbreak';
             newTime = shortBreak;
+
+            navigator.notification.alert(
+                    'You are the winner!', // message
+                    function() {
+
+                    }, // callback
+                    'Game Over', // title
+                    'Done'                  // buttonName
+                    );
         }
         else if (currentEvent == 'pomo') {
             // Long break
