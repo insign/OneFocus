@@ -1,5 +1,6 @@
 
 .icon-wait { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe832;&nbsp;'); }
+.icon-play { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
 .icon-pause { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
 .icon-next { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe762;&nbsp;'); }
 .icon-battery { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x1f50b;&nbsp;'); }

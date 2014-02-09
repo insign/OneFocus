@@ -54,7 +54,7 @@ var pomodoro = new (function() {
 
         var newTime = defaultTime;
 
-        if (rounds < 4 && currentEvent == 'pomo') {
+        if (rounds < 3 && currentEvent == 'pomo') {
             // short break
             rounds++;
 
@@ -62,6 +62,7 @@ var pomodoro = new (function() {
             newTime = shortBreak;
 
             navigator.notification.vibrate(300);
+            window.plugins.toast.showShortCenter('Go return calls, take breath or water')
         }
         else if (currentEvent == 'pomo') {
             // Long break

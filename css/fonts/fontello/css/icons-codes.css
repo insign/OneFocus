@@ -2,6 +2,7 @@
 
  
 .icon-wait:before { content: '\e832'; } /* '' */
+.icon-play:before { content: '\e800'; } /* '' */
 .icon-pause:before { content: '\e801'; } /* '' */
 .icon-next:before { content: '\e762'; } /* '' */
 .icon-battery:before { content: '🔋'; } /* '\1f50b' */

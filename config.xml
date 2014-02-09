@@ -22,12 +22,6 @@
     <preference name="orientation" value="portrait" />
     <preference name="android-installLocation" value="auto" />
 
-    <feature name="http://api.phonegap.com/1.0/media"/>
-    <feature name="http://api.phonegap.com/1.0/network"/>
-    <feature name="http://api.phonegap.com/1.0/notification"/>
-    <feature name="http://api.phonegap.com/1.0/device"/>
-    <feature name="http://api.phonegap.com/1.0/battery"/>
-
     <!-- Core plugins -->
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.network-information" />
@@ -36,6 +30,8 @@
     <gap:plugin name="org.apache.cordova.media" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
+
+    <gap:plugin name="nl.x-services.plugins.toast" />
 
     <icon src="res/icon/high.png" />
 
