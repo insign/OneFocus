@@ -1,6 +1,6 @@
 // @TODO Cordava ondeviceready & cordova_in_use
 in_cordova = false;
-in_dev = true;
+in_dev = false;
 of_version = 1;
 of_go = 0;
 
