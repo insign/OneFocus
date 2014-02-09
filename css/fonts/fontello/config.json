@@ -2,24 +2,15 @@
   "name": "icons",
   "css_prefix_text": "icon-",
   "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
   "glyphs": [
     {
       "uid": "2a6740fc2f9d0edea54205963f662594",
       "css": "wait",
       "code": 59442,
       "src": "fontelico"
-    },
-    {
-      "uid": "a51290161c48d96d7f2e2151a4cbcde1",
-      "css": "battery",
-      "code": 128267,
-      "src": "entypo"
-    },
-    {
-      "uid": "ce06b5805120d0c2f8d60cd3f1a4fdb5",
-      "css": "play",
-      "code": 59392,
-      "src": "fontawesome"
     },
     {
       "uid": "0b28050bac9d3facf2f0226db643ece0",
@@ -34,6 +25,12 @@
       "src": "fontawesome"
     },
     {
+      "uid": "a51290161c48d96d7f2e2151a4cbcde1",
+      "css": "battery",
+      "code": 128267,
+      "src": "entypo"
+    },
+    {
       "uid": "23d1c53bc15ca452df9453450e94a19c",
       "css": "error",
       "code": 59394,
@@ -44,6 +41,12 @@
       "css": "offline",
       "code": 59248,
       "src": "modernpics"
+    },
+    {
+      "uid": "53c977df16b09e3f7700a27ec90c43dc",
+      "css": "pomo",
+      "code": 59395,
+      "src": "mfglabs"
     },
     {
       "uid": "6083c8aa5e3345476a24a28ac1afaa61",

@@ -1,6 +1,33 @@
 Font license info
 
 
+## Fontelico
+
+   Copyright (C) 2012 by Fontello project
+
+   Author:    Crowdsourced, for Fontello project
+   License:   SIL (http://scripts.sil.org/OFL)
+   Homepage:  http://fontello.com
+
+
+## Font Awesome
+
+   Copyright (C) 2012 by Dave Gandy
+
+   Author:    Dave Gandy
+   License:   SIL ()
+   Homepage:  http://fortawesome.github.com/Font-Awesome/
+
+
+## Entypo
+
+   Copyright (C) 2012 by Daniel Bruce
+
+   Author:    Daniel Bruce
+   License:   CC BY-SA (http://creativecommons.org/licenses/by-sa/2.0/)
+   Homepage:  http://www.entypo.com
+
+
 ## Modern Pictograms
 
    Copyright (c) 2012 by John Caserta. All rights reserved.
@@ -10,22 +37,13 @@ Font license info
    Homepage:  http://thedesignoffice.org/project/modern-pictograms/
 
 
-## Font Awesome
+## MFG Labs
 
-   Copyright (C) 2012 by Dave Gandy
+   Copyright (C) 2012 by Daniel Bruce
 
-   Author:    Dave Gandy
-   License:   CC BY 3.0 (http://creativecommons.org/licenses/by/3.0/)
-   Homepage:  http://fortawesome.github.com/Font-Awesome/
-
-
-## Web Symbols
-
-   Copyright (c) 2011 by Just Be Nice studio. All rights reserved.
-
-   Author:    Just Be Nice studio
+   Author:    MFG Labs
    License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://www.justbenicestudio.com/studio/websymbols/
+   Homepage:  http://www.mfglabs.com/
 
 
 ## Elusive
@@ -37,21 +55,12 @@ Font license info
    Homepage:  http://aristeides.com/
 
 
-## Fontelico
+## Web Symbols
 
-   Copyright (C) 2012 by Fontello project
+   Copyright (c) 2011 by Just Be Nice studio. All rights reserved.
 
-   Author:    Crowdsourced, for Fontello project
+   Author:    Just Be Nice studio
    License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://fontello.com
-
-
-## Entypo
-
-   Copyright (C) 2012 by Daniel Bruce
-
-   Author:    Daniel Bruce
-   License:   CC BY-SA (http://creativecommons.org/licenses/by-sa/2.0/)
-   Homepage:  http://www.entypo.com
+   Homepage:  http://www.justbenicestudio.com/
 
 
