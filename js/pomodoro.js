@@ -101,7 +101,6 @@ var pomodoro = new (function() {
 
             // Alertando para voltar ao trabalho
             navigator.notification.vibrate(1000);
-            navigator.notification.beep(1);
             of_player.play();
             setTimeout(function() {
                 window.plugins.toast.showLongCenter('Time to work! Respect the pomo!');
