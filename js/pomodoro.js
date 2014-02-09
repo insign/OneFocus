@@ -1,4 +1,5 @@
 var pomodoro = new (function() {
+    var first_time = true;
 
     var $countdown;
     var $pomo;
@@ -25,9 +26,10 @@ var pomodoro = new (function() {
         $pomo.click(function(e) {
             if (!pomodoro.isActive) {
                 pomodoro.Timer.play();
-            }
-            else {
-                window.plugins.toast.showShortCenter('You can`t pause! Go work!');
+                if (first_time) {
+                    window.plugins.toast.showLongCenter('Pomo started! Learn more about pomodoro in Wikipedia');
+                    first_time = false;
+                }
             }
             e.preventDefault();
         });
@@ -124,9 +126,7 @@ var pomodoro = new (function() {
         pomodoro.Timer.stop().once();
 
         if (start) {
-            setTimeout(function() {
-                pomodoro.Timer.start();
-            }, 100);
+            pomodoro.Timer.play();
         }
 
     };
