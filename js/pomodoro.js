@@ -5,9 +5,9 @@ var pomodoro = new (function() {
     var incrementTime = 70;
 
     var shortBreak = 5000;// 300000 milliseconds == 5 minutes
-    var longBreak = 10000; // 1200000 milliseconds == 20 minutes
+    var longBreak = 20000; // 1200000 milliseconds == 20 minutes
 
-    var defaultTime = 3000; // 1500000 milliseconds == 25 minutes
+    var defaultTime = 25000; // 1500000 milliseconds == 25 minutes
     var currentTime = defaultTime;
     var rounds = 0;
 
