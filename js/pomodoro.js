@@ -54,8 +54,9 @@ var pomodoro = new (function() {
     this.completed = function() {
         console.info('evento completado', currentEvent);
 
-        if (currentEvent == 'pomo')
+        if (currentEvent == 'pomo') {
             pomodoro.Timer.stop();
+        }
 
         var newTime = defaultTime;
 
@@ -66,10 +67,14 @@ var pomodoro = new (function() {
             currentEvent = 'shortbreak';
             newTime = shortBreak;
 
+            // Alertando para uma pausa curta
             of_player.pause();
             navigator.notification.vibrate(700);
-            window.plugins.toast.showLongCenter('Go return calls, take breath or water');
-            navigator.notification.beep(2);
+            navigator.notification.beep(1);
+            setTimeout(function() {
+                window.plugins.toast.showLongCenter('Go return calls, take breath or water');
+            }, 3000);
+
             // @todo blink icons
             // @todo copy code to the longbreak
         }
@@ -79,12 +84,28 @@ var pomodoro = new (function() {
             newTime = longBreak;
 
             rounds = 0; // Clear rounds
+
+            // Alertando para uma pausa longa
+            of_player.pause();
             navigator.notification.vibrate(1000);
+            navigator.notification.beep(1);
+            setTimeout(function() {
+                window.plugins.toast.showLongCenter('Go walk, talk with friend or maybe sleep');
+            }, 3000);
+
         }
         else if (currentEvent == 'longbreak' || currentEvent == 'shortbreak') {
             // Back to pomo
             newTime = defaultTime;
             currentEvent = 'pomo';
+
+            // Alertando para voltar ao trabalho
+            navigator.notification.vibrate(1000);
+            navigator.notification.beep(1);
+            of_player.play();
+            setTimeout(function() {
+                window.plugins.toast.showLongCenter('Time to work! Respect the pomo!');
+            }, 3000);
         }
 
         console.info('entrando em', currentEvent);
