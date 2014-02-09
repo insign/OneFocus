@@ -124,7 +124,9 @@ var pomodoro = new (function() {
         pomodoro.Timer.stop().once();
 
         if (start) {
-            pomodoro.Timer.start();
+            setTimeout(function() {
+                pomodoro.Timer.start();
+            }, 100);
         }
 
     };
