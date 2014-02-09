@@ -5,10 +5,10 @@ var pomodoro = new (function() {
     var $pomo;
     var incrementTime = 70;
 
-    var shortBreak = 5000;// 300000 milliseconds == 5 minutes
-    var longBreak = 20000; // 1200000 milliseconds == 20 minutes
+    var shortBreak = in_dev ? 5000 : 300000;// 300000 milliseconds == 5 minutes
+    var longBreak = in_dev ? 20000 : 1200000; // 1200000 milliseconds == 20 minutes
 
-    var defaultTime = 25000; // 1500000 milliseconds == 25 minutes
+    var defaultTime = in_dev ? 25000 : 1500000; // 1500000 milliseconds == 25 minutes
     var currentTime = defaultTime;
     var rounds = 0;
 
@@ -28,7 +28,7 @@ var pomodoro = new (function() {
                 pomodoro.Timer.play();
                 of_player.play();
                 if (first_time) {
-                    window.plugins.toast.showLongCenter('Pomo started! Learn more about pomodoro in Wikipedia');
+                    window.plugins.toast.showLongCenter('Pomo started! Focus on your work!');
                     first_time = false;
                 }
             }
