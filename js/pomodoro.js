@@ -26,6 +26,7 @@ var pomodoro = new (function() {
         $pomo.click(function(e) {
             if (!pomodoro.isActive) {
                 pomodoro.Timer.play();
+                of_player.play();
                 if (first_time) {
                     window.plugins.toast.showLongCenter('Pomo started! Learn more about pomodoro in Wikipedia');
                     first_time = false;
@@ -106,9 +107,9 @@ var pomodoro = new (function() {
 
             // Alertando para voltar ao trabalho
             navigator.notification.vibrate(1000);
-            of_player.play();
+            navigator.notification.beep(1);
             setTimeout(function() {
-                window.plugins.toast.showLongCenter('Time to work! Respect the pomo!');
+                window.plugins.toast.showLongCenter('Focus on your work! Respect the pomo!');
             }, 3000);
         }
 
