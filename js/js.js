@@ -33,6 +33,7 @@ of_events = {
         });
     },
     deviceready: function() {
+        alert('fired device ready');
         try {
             in_cordova = device;
             console.log('Device ready!');
