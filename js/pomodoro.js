@@ -116,8 +116,7 @@ var pomodoro = new (function() {
         console.warn('rounds', rounds);
 
         pomodoro.resetCountdown(newTime, start_now);
-        return;
-    }
+    };
 
     this.resetCountdown = function(time, start) {
         currentTime = time ? time : defaultTime;
