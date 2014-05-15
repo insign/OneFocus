@@ -16,7 +16,7 @@
 
     <gap:platform name="android" />
 
-    <preference name="phonegap-version" value="3.1.0" />
+    <preference name="phonegap-version" value="3.3.0" />
     <preference name="fullscreen" value="true" />
     <preference name="exit-on-suspend" value="false" />
     <preference name="orientation" value="portrait" />
