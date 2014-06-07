@@ -2,8 +2,8 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "me.sensy.onefocus"
-        versionCode="1380"
-        version   = "1.3.1380">
+        versionCode="1390"
+        version   = "1.3.1390">
 
     <name>One Focus</name>
     <description>
