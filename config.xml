@@ -19,7 +19,10 @@
     <preference name="phonegap-version" value="3.3.0" />
     <preference name="fullscreen" value="true" />
     <preference name="exit-on-suspend" value="false" />
+    <preference name="KeepRunning" value="true"/>
     <preference name="orientation" value="portrait" />
+
+    <preference name="android-minSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
 
     <!-- Core plugins -->
